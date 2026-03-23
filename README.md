@@ -5,7 +5,7 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
 
 **Reproducibility**: 
 
-* All results in this repository [commit `TBD`] were obtained using the [CP-HIFI Code](https://github.com/tgkolda/cp_hifi_code) [commit `a1f74a4`] 
+* All results in this repository [commit `TBD`] were obtained using the [CP-HIFI Code](https://github.com/tgkolda/cp_hifi_code) [commit `f4159f0`] 
    
 ## Setup
 
@@ -42,7 +42,7 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
     ```
     git clone https://github.com/tgkolda/cp_hifi_code
     cd cp_hifi_code 
-    git checkout a1f74a4
+    git checkout f4159f0
     cd ..
     ```
 
