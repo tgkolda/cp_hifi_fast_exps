@@ -1,26 +1,22 @@
-function [best_runs, all_runs, traces] = run_unaligned(Xfull,nsamples,R,hifiinfo,genargs,solveargs,nruns,varargin)
+function [best_runs, all_runs, traces] = run_unaligned(Xfull,X,R,hifiinfo,genargs,solveargs,nruns,varargin)
 %RUN_UNALIGNED Runs multiple CP-ALS-HIFI solves on an aligned tensor
 %
-%   BEST_RUNS = RUN_UNALIGNED(X, R, HIFIINFO, GENARGS, SOLVEARGS,
-%   NRUNS) creates an aligned tensor from the full tensor X.
-%   It then runs CP-ALS-HIFI NRUNS times for each solver
+%   BEST_RUNS = RUN_UNALIGNED(XFULL, X, R, HIFIINFO, GENARGS, SOLVEARGS,
+%   NRUNS) For the full XFULL and the sparse/aligned tensor X
+%   runs CP-ALS-HIFI NRUNS times for each solver
 %   specified in SOLVEARGS, using the options in GENARGS for all runs. The
 %   rank of the CP decomposition is R and the HIFI information is given in
 %   HIFIINFO. The function returns BEST_RUNS, a table containing the best
 %   run for each solver in terms of relative error.
 %
-%   BEST_RUNS = RUN_UNALIGNED(X, R, HIFIINFO, GENARGS, SOLVEARGS,
+%   BEST_RUNS = RUN_UNALIGNED(XFULL, X, R, HIFIINFO, GENARGS, SOLVEARGS,
 %   NRUNS,SEEDS) specifies the seeds
 %
-%   BEST_RUNS = RUN_UNALIGNED(X, R, HIFIINFO, GENARGS, SOLVEARGS,
+%   BEST_RUNS = RUN_UNALIGNED(XFULL, X, R, HIFIINFO, GENARGS, SOLVEARGS,
 %   NRUNS,SEEDS,DOSAVE) Saves the best hifi tensor
 %
-%   BEST_RUNS = RUN_UNALIGNED(X, R, HIFIINFO, GENARGS, SOLVEARGS,
+%   BEST_RUNS = RUN_UNALIGNED(XFULL, X, R, HIFIINFO, GENARGS, SOLVEARGS,
 %   NRUNS,SEEDS,DOSAVE,SAVEPTH) Specifies the path to save the best tensors
-%
-%   BEST_RUNS = RUN_UNALIGNED(X, R, HIFIINFO, GENARGS, SOLVEARGS,
-%   NRUNS,SEEDS,DOSAVE,SAVEPTH,RHO) Sets the 2nd regularization for
-%   direct_sym
 %   
 %   [BEST_RUNS, ALL_RUNS] = RUN_UNUNALIGNED(...) also returns ALL_RUNS, a table
 %   containing the results of all runs.
@@ -31,11 +27,6 @@ function [best_runs, all_runs, traces] = run_unaligned(Xfull,nsamples,R,hifiinfo
 % Johannes Brust          johannesbrust@yahoo.com
 % School of Mathematical and Statistical Sciences
 % Arizona State University
-
-
-fprintf('\n Creating unaligned tensor with %d samples...\n', nsamples);
-rng(0,'twister');
-X = tensor_unaligned(Xfull, nsamples);
 
 all_runs = table('Size',[length(solveargs)*nruns 8], ...
     'VariableTypes',{'string','double','double','double','double','double','double','double'}, ...
@@ -56,19 +47,9 @@ if 9<nargin
 else
     savepth = '.';
 end
-if 10<nargin
-    rho = varargin{4};
-    if length(rho)==1
-        rho = rho*ones(length(hifiinfo),1);
-    end
-else
-    rho = zeros(length(hifiinfo),1);
-end
 if dosave
     MS = cell(length(solveargs),2);
 end
-
-rhos    = zeros(length(hifiinfo),1);
 traces  = cell(nruns,3);
 
 for i = 1:length(solveargs)
@@ -84,13 +65,7 @@ for i = 1:length(solveargs)
         else
             solver_name = solveargs{i}{2};
         end
-        if strcmp(solver_name,'direct_sym')
-            for ii=1:length(hifiinfo)
-                rhos(ii) = hifiinfo{ii}.rho;
-                hifiinfo{ii}.rho = rho(ii);
-            end
-            
-        end
+
         fprintf('\n Run #%d for solver (using rng seed %d): %s\n', runid, seeds(runid), solveargs{i}{2});
         rng(seeds(runid),'twister');
         tic
@@ -110,13 +85,6 @@ for i = 1:length(solveargs)
             if dosave
                 MS{i,2} = M;
             end
-        end
-
-        % rest rho
-        if strcmp(solver_name,'direct_sym')
-            for ii=1:length(hifiinfo)
-                hifiinfo{ii}.rho = rhos(ii);
-            end            
         end
 
     end

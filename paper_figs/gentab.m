@@ -3,12 +3,13 @@ function [timet,errt] = gentab(datapath,writepath,pname,ptype)
 %   [TIMET,ERRT] = GENTAB(DATAPATH,WRITEPATH,PNAME,PTYPE)
 %   Returns the experiment times and errors in TIMET and ERRT. 
 %   PNAME is the problem e.g., 'vortex' and PTYPE is the type, e.g., 
-%   'aligned'. Stores the latex formatted file 'table_pname_ptype.txt' 
+%   'aligned'. Stores the tables such as miranda_times_alinged.txt 
 %   with data from DATAPATH in WRITEPATH
 %--------------------------------------------------------------------------
 % 11/04/25, J.B., initial version
 % 11/06/25, J.B., preparation for release
 % 01/12/26, J.B., updated version
+% 03/23/26, J.B., skip generation of 
 
 % Add data to the path
 addpath(datapath);
@@ -21,7 +22,7 @@ smps    = 50000;
 if strcmp(ptype,'aligned')
     snames = {'pcg','direct_decoupled','direct'};
 else
-    snames = {'pcg','direct_nonsym','direct_sym'};
+    snames = {'pcg','direct_nonsym'}; % ,'direct_sym'
 end
 
 nsolv   = length(snames);
@@ -30,7 +31,7 @@ tables  = cell(nsolv,1);
 for i=1:nsolv
     ndata = [nstem_,'_',ptype,'_',snames{i},'_best.txt'];
     if ~exist(ndata,'file')      
-        error(['gentable:: Data not found:',ndata,'. Please rerun',['run_',ptype,'_',pname,'.m']]);
+        error(['gentable:: Data not found:',ndata,'. Please rerun',[' run_',ptype,'_',pname,'.m']]);
     end
     tables{i} = readtable(ndata,'NumHeaderLines',2);
 end
@@ -111,7 +112,7 @@ for i=1:length(smps)
 end
 
 % save as text file
-writecell(tbl,[writepath,'/',[pname,'_table','_',ptype]]);
+%writecell(tbl,[writepath,'/',[pname,'_table','_',ptype]]);
 
 fname = fullfile([writepath,'/',[pname,'_times','_',ptype],'.txt']);
 fid=fopen(fname,'w+');

@@ -2,5 +2,5 @@
 
 gentab('../results','.','miranda','aligned');
 gentab('../results','.','miranda','unaligned');
-gentab('../results','.','vortex','aligned');
+%gentab('../results','.','vortex','aligned');
 gentab('../results','.','vortex','unaligned');

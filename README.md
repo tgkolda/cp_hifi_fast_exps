@@ -76,7 +76,12 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
     * **`results`** contains the results of the experiments
     * **`paper_figs`** contains code to generate datafiles for the paper, from the results in `results/`
 
-* To re-run an experiment, navigate into the appropriate folder (`vortex_experiments` or `miranda_experiments`) and use one of two main drivers (`run_[dataset]_aligned.m` or `run_[dataset]_unaligned.m`). **Note:** By default, the extremely slow direct methods are disabled via  `hasdirect = 0` in the appropriate driver; you can enable them by setting `hasdirect = 1`.  
+* To re-run an experiment, navigate into the appropriate folder (`vortex_experiments` or `miranda_experiments`) and use one of two main drivers (`run_aligned_[dataset].m` or `run_unaligned_[dataset].m`). **Note:** By default, the extremely slow direct methods are disabled via  `hasdirect = 0` in the appropriate driver; you can enable them by setting `hasdirect = 1`. The experiments generate three types of data for a combination of `[dataset]_[type]_[solver]`. The value for `[dataset]` is either {vortex,miranda} and for `[type]` it is {aligned, unaligned}.
+`[solver]` is among {pcg,direct,direct_decoupled,direct_nonsym}. The generated logs, and run data is stored as:
+     * `results/[dataset]_[type]_log_DD-Mmm-YYYY-HH_MM_SS.txt` contains the log of the run
+     * `results/[dataset]_[type]_[solver]_all.txt` contains the rank ($r$), runid (run identifier in {1,2,3}), seed (random seed), time (total runtime), rerr (relative error), it (total outer iterations) for all runs using the specified solver
+     * `results/[dataset]_[type]_[solver]_best.txt` contains the data for the best run (lowest relative error) for each rank $r$. 
+    
 
     - Vortex aligned experiments:
 
@@ -87,9 +92,9 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
         ```
     
         This produces the following files:
-        * `results/vortex_aligned_log_DD-Mmm-YYYY-HH_MM_SS.txt` contains the log of the run
-        * `results/vortex_aligned_[solver]_all.txt` contains the rank ($r$), runid (run identifier in {1,2,3}), seed (random seed), time (total runtime), rerr (relative error), it (total outer iterations) for all runs using the specified solver
-        * `results/vortex_aligned_[solver]_best.txt` contains the data for the best run (lowest relative error) for each rank $r$. 
+        * `results/vortex_aligned_log_DD-Mmm-YYYY-HH_MM_SS.txt` 
+        * `results/vortex_aligned_[solver]_all.txt` 
+        * `results/vortex_aligned_[solver]_best.txt` 
     
     - Vortex unaligned experiments:
 
@@ -100,7 +105,9 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
         ```
         
         This produces the following files:
-        * TBD
+        * `results/vortex_unaligned_log_DD-Mmm-YYYY-HH_MM_SS.txt` 
+        * `results/vortex_unaligned_[solver]_all.txt` 
+        * `results/vortex_unaligned_[solver]_best.txt`
 
     - Miranda aligned experiments:
 
@@ -110,7 +117,9 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
         cd ..
         ```
         This produces the following files:
-        * TBD
+        * `results/miranda_aligned_log_DD-Mmm-YYYY-HH_MM_SS.txt` 
+        * `results/miranda_aligned_[solver]_all.txt` 
+        * `results/miranda_aligned_[solver]_best.txt`
 
     - Miranda unaligned experiments:
 
@@ -120,7 +129,9 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
         cd ..
         ```
         This produces the following files:
-        * TBD
+        * `results/miranda_unaligned_log_DD-Mmm-YYYY-HH_MM_SS.txt` 
+        * `results/miranda_unaligned_[solver]_all.txt` 
+        * `results/miranda_unaligned_[solver]_best.txt`
 
 
 ## Creating Data for Figures from the Results Files
@@ -146,5 +157,8 @@ To generate the vortex slice images:
     ```
     
     This produces the following files:
-    * TBD
-    
+     * `paper_figs/vortex_original_a_exp.pdf` Original frontal slice no. 151 of the vortex tensor
+     * `paper_figs/vortex_samp_a_exp.pdf` Original frontal slice no. 151 of the vortex tensor sampled at 50,000 points
+     * `paper_figs/vortex_slices_pcg_a_exp.pdf` CP-HIFI frontal slice no. 151 of the vortex tensor computed using pcg 
+     * `paper_figs/vortex_direct_nonsym_a_exp.pdf` CP-HIFI frontal slice no. 151 of the vortex tensor computed using direct nonsymmetric 
+     

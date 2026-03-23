@@ -17,10 +17,6 @@ function [best_runs, all_runs, traces] = run_unaligned(Xfull,X,R,hifiinfo,genarg
 %
 %   BEST_RUNS = RUN_UNALIGNED(XFULL, X, R, HIFIINFO, GENARGS, SOLVEARGS,
 %   NRUNS,SEEDS,DOSAVE,SAVEPTH) Specifies the path to save the best tensors
-%
-%   BEST_RUNS = RUN_UNALIGNED(XFULL, X, R, HIFIINFO, GENARGS, SOLVEARGS,
-%   NRUNS,SEEDS,DOSAVE,SAVEPTH,RHO) Sets the 2nd regularization for
-%   direct_sym
 %   
 %   [BEST_RUNS, ALL_RUNS] = RUN_UNUNALIGNED(...) also returns ALL_RUNS, a table
 %   containing the results of all runs.
@@ -51,19 +47,9 @@ if 9<nargin
 else
     savepth = '.';
 end
-if 10<nargin
-    rho = varargin{4};
-    if length(rho)==1
-        rho = rho*ones(length(hifiinfo),1);
-    end
-else
-    rho = zeros(length(hifiinfo),1);
-end
 if dosave
     MS = cell(length(solveargs),2);
 end
-
-rhos    = zeros(length(hifiinfo),1);
 traces  = cell(nruns,3);
 
 for i = 1:length(solveargs)
@@ -79,13 +65,7 @@ for i = 1:length(solveargs)
         else
             solver_name = solveargs{i}{2};
         end
-        if strcmp(solver_name,'direct_sym')
-            for ii=1:length(hifiinfo)
-                rhos(ii) = hifiinfo{ii}.rho;
-                hifiinfo{ii}.rho = rho(ii);
-            end
-            
-        end
+
         fprintf('\n Run #%d for solver (using rng seed %d): %s\n', runid, seeds(runid), solveargs{i}{2});
         rng(seeds(runid),'twister');
         tic
@@ -105,13 +85,6 @@ for i = 1:length(solveargs)
             if dosave
                 MS{i,2} = M;
             end
-        end
-
-        % rest rho
-        if strcmp(solver_name,'direct_sym')
-            for ii=1:length(hifiinfo)
-                hifiinfo{ii}.rho = rhos(ii);
-            end            
         end
 
     end

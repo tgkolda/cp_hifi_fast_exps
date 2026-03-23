@@ -1,0 +1,1413 @@
+
+*************** vortex_aligned experiment **********          
+*           Software: Matlab R2023a                     
+*             System: GLNXA64                            
+*               File: run_aligned_vortex                            
+*                                                   
+*         nruns(ALS): 3                            
+*              seeds: 99991  99989  99971                            
+*              ranks: 5  10  15  20  25  30  35  40  45  50                            
+*                                                   
+*           datetime: 23-Mar-2026 07:14:19                            
+*         J.J. Brust, T.G., Kolda                   
+*************************************************** 
+
+
+ Run #1 for solver (using rng seed 99991): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 5, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter  6: f = 8.497170e-01 f-delta = 5.3e-07
+ Final f = 8.497170e-01 
+
+ Run #2 for solver (using rng seed 99989): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 5, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 8.526859e-01 f-delta = 7.9e-04
+ Iter 20: f = 8.740584e-01 f-delta = 2.6e-05
+ Iter 30: f = 8.741805e-01 f-delta = 7.6e-06
+ Iter 40: f = 8.742384e-01 f-delta = 4.8e-06
+ Iter 50: f = 8.742786e-01 f-delta = 3.5e-06
+ Final f = 8.742786e-01 
+
+ Run #3 for solver (using rng seed 99971): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 5, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 8.737742e-01 f-delta = 3.5e-04
+ Iter 20: f = 8.741216e-01 f-delta = 9.3e-06
+ Iter 30: f = 8.741969e-01 f-delta = 6.6e-06
+ Iter 40: f = 8.742535e-01 f-delta = 5.0e-06
+ Iter 50: f = 8.742966e-01 f-delta = 3.8e-06
+ Final f = 8.742966e-01 
+        Solver=pcg (best run at id=3, seed=99971)
+Best rel error=0.1257
+     Best time=2.0212
+
+ Run #1 for solver (using rng seed 99991): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 10, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.395791e-01 f-delta = 1.5e-03
+ Iter 20: f = 9.429862e-01 f-delta = 3.2e-04
+ Iter 30: f = 9.485006e-01 f-delta = 6.1e-04
+ Iter 40: f = 9.512166e-01 f-delta = 1.2e-04
+ Iter 50: f = 9.518786e-01 f-delta = 4.2e-05
+ Final f = 9.518786e-01 
+
+ Run #2 for solver (using rng seed 99989): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 10, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.438492e-01 f-delta = 1.8e-03
+ Iter 20: f = 9.491692e-01 f-delta = 1.9e-04
+ Iter 30: f = 9.508642e-01 f-delta = 1.6e-04
+ Iter 40: f = 9.521607e-01 f-delta = 9.0e-05
+ Iter 50: f = 9.526983e-01 f-delta = 3.5e-05
+ Final f = 9.526983e-01 
+
+ Run #3 for solver (using rng seed 99971): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 10, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.410012e-01 f-delta = 7.1e-04
+ Iter 20: f = 9.441262e-01 f-delta = 1.5e-04
+ Iter 30: f = 9.455742e-01 f-delta = 1.9e-04
+ Iter 40: f = 9.486839e-01 f-delta = 3.8e-04
+ Iter 50: f = 9.514640e-01 f-delta = 1.4e-04
+ Final f = 9.514640e-01 
+        Solver=pcg (best run at id=2, seed=99989)
+Best rel error=0.0473
+     Best time=2.2136
+
+ Run #1 for solver (using rng seed 99991): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 15, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.623237e-01 f-delta = 2.7e-04
+ Iter 20: f = 9.669769e-01 f-delta = 2.6e-04
+ Iter 30: f = 9.680822e-01 f-delta = 7.1e-05
+ Iter 40: f = 9.686548e-01 f-delta = 5.0e-05
+ Iter 50: f = 9.691190e-01 f-delta = 4.5e-05
+ Final f = 9.691190e-01 
+
+ Run #2 for solver (using rng seed 99989): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 15, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.656979e-01 f-delta = 4.1e-04
+ Iter 20: f = 9.680791e-01 f-delta = 1.6e-04
+ Iter 30: f = 9.692850e-01 f-delta = 9.5e-05
+ Iter 40: f = 9.701333e-01 f-delta = 8.1e-05
+ Iter 50: f = 9.708623e-01 f-delta = 6.0e-05
+ Final f = 9.708623e-01 
+
+ Run #3 for solver (using rng seed 99971): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 15, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.608639e-01 f-delta = 5.7e-04
+ Iter 20: f = 9.629236e-01 f-delta = 1.2e-04
+ Iter 30: f = 9.638059e-01 f-delta = 7.0e-05
+ Iter 40: f = 9.643366e-01 f-delta = 4.1e-05
+ Iter 50: f = 9.646711e-01 f-delta = 2.9e-05
+ Final f = 9.646711e-01 
+        Solver=pcg (best run at id=2, seed=99989)
+Best rel error=0.0291
+     Best time=2.3052
+
+ Run #1 for solver (using rng seed 99991): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 20, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.740843e-01 f-delta = 4.4e-04
+ Iter 20: f = 9.763684e-01 f-delta = 1.1e-04
+ Iter 30: f = 9.769013e-01 f-delta = 2.8e-05
+ Iter 40: f = 9.771835e-01 f-delta = 2.8e-05
+ Iter 50: f = 9.774548e-01 f-delta = 2.5e-05
+ Final f = 9.774548e-01 
+
+ Run #2 for solver (using rng seed 99989): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 20, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.719743e-01 f-delta = 4.5e-04
+ Iter 20: f = 9.751924e-01 f-delta = 1.9e-04
+ Iter 30: f = 9.766532e-01 f-delta = 1.2e-04
+ Iter 40: f = 9.775376e-01 f-delta = 6.6e-05
+ Iter 50: f = 9.780178e-01 f-delta = 3.6e-05
+ Final f = 9.780178e-01 
+
+ Run #3 for solver (using rng seed 99971): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 20, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.727986e-01 f-delta = 4.1e-04
+ Iter 20: f = 9.749091e-01 f-delta = 1.2e-04
+ Iter 30: f = 9.760812e-01 f-delta = 1.2e-04
+ Iter 40: f = 9.769275e-01 f-delta = 6.4e-05
+ Iter 50: f = 9.774304e-01 f-delta = 4.2e-05
+ Final f = 9.774304e-01 
+        Solver=pcg (best run at id=2, seed=99989)
+Best rel error=0.0220
+     Best time=2.3521
+
+ Run #1 for solver (using rng seed 99991): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 25, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.775037e-01 f-delta = 3.2e-04
+ Iter 20: f = 9.792176e-01 f-delta = 1.3e-04
+ Iter 30: f = 9.802126e-01 f-delta = 8.1e-05
+ Iter 40: f = 9.808132e-01 f-delta = 4.2e-05
+ Iter 50: f = 9.810861e-01 f-delta = 2.0e-05
+ Final f = 9.810861e-01 
+
+ Run #2 for solver (using rng seed 99989): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 25, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.781082e-01 f-delta = 2.5e-04
+ Iter 20: f = 9.794969e-01 f-delta = 8.4e-05
+ Iter 30: f = 9.800174e-01 f-delta = 4.1e-05
+ Iter 40: f = 9.803997e-01 f-delta = 3.2e-05
+ Iter 50: f = 9.807196e-01 f-delta = 3.1e-05
+ Final f = 9.807196e-01 
+
+ Run #3 for solver (using rng seed 99971): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 25, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.771755e-01 f-delta = 4.3e-04
+ Iter 20: f = 9.788559e-01 f-delta = 8.5e-05
+ Iter 30: f = 9.794753e-01 f-delta = 4.6e-05
+ Iter 40: f = 9.798524e-01 f-delta = 3.1e-05
+ Iter 50: f = 9.801246e-01 f-delta = 2.5e-05
+ Final f = 9.801246e-01 
+        Solver=pcg (best run at id=1, seed=99991)
+Best rel error=0.0189
+     Best time=2.5796
+
+ Run #1 for solver (using rng seed 99991): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 30, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.816533e-01 f-delta = 2.5e-04
+ Iter 20: f = 9.835868e-01 f-delta = 1.0e-04
+ Iter 30: f = 9.842472e-01 f-delta = 5.1e-05
+ Iter 40: f = 9.846600e-01 f-delta = 3.3e-05
+ Iter 50: f = 9.849936e-01 f-delta = 3.6e-05
+ Final f = 9.849936e-01 
+
+ Run #2 for solver (using rng seed 99989): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 30, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.815035e-01 f-delta = 2.2e-04
+ Iter 20: f = 9.825187e-01 f-delta = 5.3e-05
+ Iter 30: f = 9.833044e-01 f-delta = 1.3e-04
+ Iter 40: f = 9.845480e-01 f-delta = 1.1e-04
+ Iter 50: f = 9.853536e-01 f-delta = 5.8e-05
+ Final f = 9.853536e-01 
+
+ Run #3 for solver (using rng seed 99971): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 30, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.810865e-01 f-delta = 1.4e-04
+ Iter 20: f = 9.820537e-01 f-delta = 8.8e-05
+ Iter 30: f = 9.832731e-01 f-delta = 1.2e-04
+ Iter 40: f = 9.843252e-01 f-delta = 8.1e-05
+ Iter 50: f = 9.850259e-01 f-delta = 6.3e-05
+ Final f = 9.850259e-01 
+        Solver=pcg (best run at id=2, seed=99989)
+Best rel error=0.0146
+     Best time=2.7020
+
+ Run #1 for solver (using rng seed 99991): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 35, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.845222e-01 f-delta = 2.6e-04
+ Iter 20: f = 9.864065e-01 f-delta = 1.3e-04
+ Iter 30: f = 9.873020e-01 f-delta = 6.4e-05
+ Iter 40: f = 9.877612e-01 f-delta = 3.8e-05
+ Iter 50: f = 9.880904e-01 f-delta = 3.0e-05
+ Final f = 9.880904e-01 
+
+ Run #2 for solver (using rng seed 99989): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 35, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.845322e-01 f-delta = 3.5e-04
+ Iter 20: f = 9.861684e-01 f-delta = 1.0e-04
+ Iter 30: f = 9.870322e-01 f-delta = 6.7e-05
+ Iter 40: f = 9.876812e-01 f-delta = 6.4e-05
+ Iter 50: f = 9.881871e-01 f-delta = 4.0e-05
+ Final f = 9.881871e-01 
+
+ Run #3 for solver (using rng seed 99971): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 35, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.836761e-01 f-delta = 2.7e-04
+ Iter 20: f = 9.857024e-01 f-delta = 1.7e-04
+ Iter 30: f = 9.866182e-01 f-delta = 5.2e-05
+ Iter 40: f = 9.870549e-01 f-delta = 3.6e-05
+ Iter 50: f = 9.874387e-01 f-delta = 4.0e-05
+ Final f = 9.874387e-01 
+        Solver=pcg (best run at id=2, seed=99989)
+Best rel error=0.0118
+     Best time=2.8284
+
+ Run #1 for solver (using rng seed 99991): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 40, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.865288e-01 f-delta = 2.7e-04
+ Iter 20: f = 9.883127e-01 f-delta = 8.8e-05
+ Iter 30: f = 9.889762e-01 f-delta = 4.9e-05
+ Iter 40: f = 9.893341e-01 f-delta = 1.7e-05
+ Iter 50: f = 9.896095e-01 f-delta = 2.2e-05
+ Final f = 9.896095e-01 
+
+ Run #2 for solver (using rng seed 99989): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 40, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.869336e-01 f-delta = 4.5e-04
+ Iter 20: f = 9.887713e-01 f-delta = 1.1e-04
+ Iter 30: f = 9.895745e-01 f-delta = 5.7e-05
+ Iter 40: f = 9.899720e-01 f-delta = 3.0e-05
+ Iter 50: f = 9.901879e-01 f-delta = 1.6e-05
+ Final f = 9.901879e-01 
+
+ Run #3 for solver (using rng seed 99971): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 40, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.876434e-01 f-delta = 3.4e-04
+ Iter 20: f = 9.889166e-01 f-delta = 7.1e-05
+ Iter 30: f = 9.894633e-01 f-delta = 4.8e-05
+ Iter 40: f = 9.898877e-01 f-delta = 4.0e-05
+ Iter 50: f = 9.903071e-01 f-delta = 3.2e-05
+ Final f = 9.903071e-01 
+        Solver=pcg (best run at id=3, seed=99971)
+Best rel error=0.0097
+     Best time=3.0269
+
+ Run #1 for solver (using rng seed 99991): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 45, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.889495e-01 f-delta = 2.4e-04
+ Iter 20: f = 9.901293e-01 f-delta = 7.7e-05
+ Iter 30: f = 9.907116e-01 f-delta = 4.8e-05
+ Iter 40: f = 9.911281e-01 f-delta = 4.1e-05
+ Iter 50: f = 9.914390e-01 f-delta = 2.4e-05
+ Final f = 9.914390e-01 
+
+ Run #2 for solver (using rng seed 99989): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 45, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.886898e-01 f-delta = 3.8e-04
+ Iter 20: f = 9.901764e-01 f-delta = 9.5e-05
+ Iter 30: f = 9.908244e-01 f-delta = 4.3e-05
+ Iter 40: f = 9.910455e-01 f-delta = 1.7e-05
+ Iter 50: f = 9.911714e-01 f-delta = 9.7e-06
+ Final f = 9.911714e-01 
+
+ Run #3 for solver (using rng seed 99971): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 45, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.891916e-01 f-delta = 2.0e-04
+ Iter 20: f = 9.903415e-01 f-delta = 5.9e-05
+ Iter 30: f = 9.907166e-01 f-delta = 3.1e-05
+ Iter 40: f = 9.910371e-01 f-delta = 2.8e-05
+ Iter 50: f = 9.912533e-01 f-delta = 1.9e-05
+ Final f = 9.912533e-01 
+        Solver=pcg (best run at id=1, seed=99991)
+Best rel error=0.0086
+     Best time=3.2543
+
+ Run #1 for solver (using rng seed 99991): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 50, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.908281e-01 f-delta = 2.2e-04
+ Iter 20: f = 9.918789e-01 f-delta = 6.4e-05
+ Iter 30: f = 9.923461e-01 f-delta = 3.8e-05
+ Iter 40: f = 9.926370e-01 f-delta = 2.3e-05
+ Iter 50: f = 9.928434e-01 f-delta = 1.6e-05
+ Final f = 9.928434e-01 
+
+ Run #2 for solver (using rng seed 99989): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 50, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.907751e-01 f-delta = 2.5e-04
+ Iter 20: f = 9.917300e-01 f-delta = 5.1e-05
+ Iter 30: f = 9.921107e-01 f-delta = 3.2e-05
+ Iter 40: f = 9.924102e-01 f-delta = 2.9e-05
+ Iter 50: f = 9.926118e-01 f-delta = 1.2e-05
+ Final f = 9.926118e-01 
+
+ Run #3 for solver (using rng seed 99971): pcg
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 50, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 75, 75, 75
+   tol  (inner) = 1e-06, 1e-06, 1e-06
+ Iter 10: f = 9.904087e-01 f-delta = 2.9e-04
+ Iter 20: f = 9.915314e-01 f-delta = 6.5e-05
+ Iter 30: f = 9.919896e-01 f-delta = 3.2e-05
+ Iter 40: f = 9.922102e-01 f-delta = 1.8e-05
+ Iter 50: f = 9.923764e-01 f-delta = 1.4e-05
+ Final f = 9.923764e-01 
+        Solver=pcg (best run at id=1, seed=99991)
+Best rel error=0.0072
+     Best time=3.8096
+
+ Run #1 for solver (using rng seed 99991): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 5, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter  6: f = 8.497170e-01 f-delta = 5.4e-07
+ Final f = 8.497170e-01 
+
+ Run #2 for solver (using rng seed 99989): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 5, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 8.526846e-01 f-delta = 7.8e-04
+ Iter 20: f = 8.740581e-01 f-delta = 2.6e-05
+ Iter 30: f = 8.741805e-01 f-delta = 7.6e-06
+ Iter 40: f = 8.742385e-01 f-delta = 4.8e-06
+ Iter 50: f = 8.742788e-01 f-delta = 3.5e-06
+ Final f = 8.742788e-01 
+
+ Run #3 for solver (using rng seed 99971): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 5, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 8.737744e-01 f-delta = 3.5e-04
+ Iter 20: f = 8.741216e-01 f-delta = 9.3e-06
+ Iter 30: f = 8.741970e-01 f-delta = 6.6e-06
+ Iter 40: f = 8.742536e-01 f-delta = 5.0e-06
+ Iter 50: f = 8.742967e-01 f-delta = 3.8e-06
+ Final f = 8.742967e-01 
+        Solver=direct_decoupled (best run at id=3, seed=99971)
+Best rel error=0.1257
+     Best time=2.0428
+
+ Run #1 for solver (using rng seed 99991): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 10, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.395828e-01 f-delta = 1.4e-03
+ Iter 20: f = 9.429743e-01 f-delta = 3.1e-04
+ Iter 30: f = 9.484743e-01 f-delta = 6.1e-04
+ Iter 40: f = 9.512316e-01 f-delta = 1.2e-04
+ Iter 50: f = 9.519102e-01 f-delta = 4.4e-05
+ Final f = 9.519102e-01 
+
+ Run #2 for solver (using rng seed 99989): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 10, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.438011e-01 f-delta = 1.8e-03
+ Iter 20: f = 9.491690e-01 f-delta = 2.0e-04
+ Iter 30: f = 9.509202e-01 f-delta = 1.7e-04
+ Iter 40: f = 9.522414e-01 f-delta = 9.2e-05
+ Iter 50: f = 9.528111e-01 f-delta = 3.7e-05
+ Final f = 9.528111e-01 
+
+ Run #3 for solver (using rng seed 99971): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 10, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.410089e-01 f-delta = 7.1e-04
+ Iter 20: f = 9.441286e-01 f-delta = 1.5e-04
+ Iter 30: f = 9.455764e-01 f-delta = 1.9e-04
+ Iter 40: f = 9.486894e-01 f-delta = 3.8e-04
+ Iter 50: f = 9.514788e-01 f-delta = 1.4e-04
+ Final f = 9.514788e-01 
+        Solver=direct_decoupled (best run at id=2, seed=99989)
+Best rel error=0.0472
+     Best time=1.8711
+
+ Run #1 for solver (using rng seed 99991): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 15, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.623346e-01 f-delta = 2.7e-04
+ Iter 20: f = 9.669873e-01 f-delta = 2.6e-04
+ Iter 30: f = 9.680908e-01 f-delta = 7.1e-05
+ Iter 40: f = 9.686684e-01 f-delta = 5.1e-05
+ Iter 50: f = 9.691394e-01 f-delta = 4.6e-05
+ Final f = 9.691394e-01 
+
+ Run #2 for solver (using rng seed 99989): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 15, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.657005e-01 f-delta = 4.1e-04
+ Iter 20: f = 9.680844e-01 f-delta = 1.6e-04
+ Iter 30: f = 9.692930e-01 f-delta = 9.6e-05
+ Iter 40: f = 9.701435e-01 f-delta = 8.2e-05
+ Iter 50: f = 9.708747e-01 f-delta = 6.0e-05
+ Final f = 9.708747e-01 
+
+ Run #3 for solver (using rng seed 99971): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 15, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.607367e-01 f-delta = 5.9e-04
+ Iter 20: f = 9.628973e-01 f-delta = 1.2e-04
+ Iter 30: f = 9.638081e-01 f-delta = 7.5e-05
+ Iter 40: f = 9.644471e-01 f-delta = 5.8e-05
+ Iter 50: f = 9.649783e-01 f-delta = 5.0e-05
+ Final f = 9.649783e-01 
+        Solver=direct_decoupled (best run at id=2, seed=99989)
+Best rel error=0.0291
+     Best time=2.0719
+
+ Run #1 for solver (using rng seed 99991): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 20, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.745512e-01 f-delta = 4.7e-04
+ Iter 20: f = 9.768008e-01 f-delta = 1.1e-04
+ Iter 30: f = 9.775501e-01 f-delta = 5.9e-05
+ Iter 40: f = 9.780403e-01 f-delta = 4.2e-05
+ Iter 50: f = 9.783777e-01 f-delta = 2.8e-05
+ Final f = 9.783777e-01 
+
+ Run #2 for solver (using rng seed 99989): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 20, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.717795e-01 f-delta = 3.9e-04
+ Iter 20: f = 9.744952e-01 f-delta = 1.9e-04
+ Iter 30: f = 9.759134e-01 f-delta = 1.1e-04
+ Iter 40: f = 9.769098e-01 f-delta = 8.9e-05
+ Iter 50: f = 9.776517e-01 f-delta = 6.1e-05
+ Final f = 9.776517e-01 
+
+ Run #3 for solver (using rng seed 99971): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 20, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.727938e-01 f-delta = 4.4e-04
+ Iter 20: f = 9.748592e-01 f-delta = 1.0e-04
+ Iter 30: f = 9.758626e-01 f-delta = 1.1e-04
+ Iter 40: f = 9.767484e-01 f-delta = 6.5e-05
+ Iter 50: f = 9.772289e-01 f-delta = 3.8e-05
+ Final f = 9.772289e-01 
+        Solver=direct_decoupled (best run at id=1, seed=99991)
+Best rel error=0.0216
+     Best time=2.2105
+
+ Run #1 for solver (using rng seed 99991): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 25, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.773690e-01 f-delta = 3.5e-04
+ Iter 20: f = 9.791447e-01 f-delta = 8.5e-05
+ Iter 30: f = 9.796869e-01 f-delta = 4.1e-05
+ Iter 40: f = 9.800583e-01 f-delta = 3.5e-05
+ Iter 50: f = 9.804069e-01 f-delta = 3.5e-05
+ Final f = 9.804069e-01 
+
+ Run #2 for solver (using rng seed 99989): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 25, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.781218e-01 f-delta = 2.8e-04
+ Iter 20: f = 9.797685e-01 f-delta = 9.4e-05
+ Iter 30: f = 9.803318e-01 f-delta = 4.2e-05
+ Iter 40: f = 9.807012e-01 f-delta = 3.3e-05
+ Iter 50: f = 9.809924e-01 f-delta = 2.6e-05
+ Final f = 9.809924e-01 
+
+ Run #3 for solver (using rng seed 99971): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 25, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.770253e-01 f-delta = 4.3e-04
+ Iter 20: f = 9.788488e-01 f-delta = 8.3e-05
+ Iter 30: f = 9.794649e-01 f-delta = 5.1e-05
+ Iter 40: f = 9.798919e-01 f-delta = 3.7e-05
+ Iter 50: f = 9.802081e-01 f-delta = 2.8e-05
+ Final f = 9.802081e-01 
+        Solver=direct_decoupled (best run at id=2, seed=99989)
+Best rel error=0.0190
+     Best time=2.2261
+
+ Run #1 for solver (using rng seed 99991): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 30, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.817218e-01 f-delta = 2.5e-04
+ Iter 20: f = 9.835316e-01 f-delta = 1.3e-04
+ Iter 30: f = 9.844081e-01 f-delta = 6.7e-05
+ Iter 40: f = 9.849902e-01 f-delta = 5.4e-05
+ Iter 50: f = 9.855016e-01 f-delta = 4.9e-05
+ Final f = 9.855016e-01 
+
+ Run #2 for solver (using rng seed 99989): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 30, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.815166e-01 f-delta = 1.7e-04
+ Iter 20: f = 9.824190e-01 f-delta = 6.4e-05
+ Iter 30: f = 9.830196e-01 f-delta = 6.4e-05
+ Iter 40: f = 9.841392e-01 f-delta = 1.3e-04
+ Iter 50: f = 9.850693e-01 f-delta = 7.8e-05
+ Final f = 9.850693e-01 
+
+ Run #3 for solver (using rng seed 99971): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 30, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.812496e-01 f-delta = 2.3e-04
+ Iter 20: f = 9.824285e-01 f-delta = 7.6e-05
+ Iter 30: f = 9.830606e-01 f-delta = 6.4e-05
+ Iter 40: f = 9.840799e-01 f-delta = 1.3e-04
+ Iter 50: f = 9.851042e-01 f-delta = 7.3e-05
+ Final f = 9.851042e-01 
+        Solver=direct_decoupled (best run at id=1, seed=99991)
+Best rel error=0.0145
+     Best time=2.3323
+
+ Run #1 for solver (using rng seed 99991): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 35, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.851455e-01 f-delta = 3.1e-04
+ Iter 20: f = 9.869556e-01 f-delta = 1.2e-04
+ Iter 30: f = 9.878012e-01 f-delta = 6.6e-05
+ Iter 40: f = 9.883393e-01 f-delta = 4.7e-05
+ Iter 50: f = 9.887493e-01 f-delta = 3.6e-05
+ Final f = 9.887493e-01 
+
+ Run #2 for solver (using rng seed 99989): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 35, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.849900e-01 f-delta = 2.8e-04
+ Iter 20: f = 9.865947e-01 f-delta = 9.8e-05
+ Iter 30: f = 9.873149e-01 f-delta = 5.8e-05
+ Iter 40: f = 9.877972e-01 f-delta = 4.2e-05
+ Iter 50: f = 9.881724e-01 f-delta = 3.5e-05
+ Final f = 9.881724e-01 
+
+ Run #3 for solver (using rng seed 99971): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 35, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.837599e-01 f-delta = 2.8e-04
+ Iter 20: f = 9.853203e-01 f-delta = 1.3e-04
+ Iter 30: f = 9.865863e-01 f-delta = 9.3e-05
+ Iter 40: f = 9.872674e-01 f-delta = 5.7e-05
+ Iter 50: f = 9.877553e-01 f-delta = 4.3e-05
+ Final f = 9.877553e-01 
+        Solver=direct_decoupled (best run at id=1, seed=99991)
+Best rel error=0.0113
+     Best time=2.4502
+
+ Run #1 for solver (using rng seed 99991): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 40, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.872134e-01 f-delta = 2.5e-04
+ Iter 20: f = 9.887635e-01 f-delta = 1.1e-04
+ Iter 30: f = 9.895719e-01 f-delta = 6.1e-05
+ Iter 40: f = 9.900282e-01 f-delta = 3.6e-05
+ Iter 50: f = 9.903177e-01 f-delta = 2.4e-05
+ Final f = 9.903177e-01 
+
+ Run #2 for solver (using rng seed 99989): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 40, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.872788e-01 f-delta = 2.6e-04
+ Iter 20: f = 9.886896e-01 f-delta = 9.2e-05
+ Iter 30: f = 9.893295e-01 f-delta = 5.0e-05
+ Iter 40: f = 9.897930e-01 f-delta = 4.6e-05
+ Iter 50: f = 9.902490e-01 f-delta = 4.4e-05
+ Final f = 9.902490e-01 
+
+ Run #3 for solver (using rng seed 99971): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 40, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.873517e-01 f-delta = 2.7e-04
+ Iter 20: f = 9.889243e-01 f-delta = 1.1e-04
+ Iter 30: f = 9.897381e-01 f-delta = 6.3e-05
+ Iter 40: f = 9.902094e-01 f-delta = 3.7e-05
+ Iter 50: f = 9.904981e-01 f-delta = 2.4e-05
+ Final f = 9.904981e-01 
+        Solver=direct_decoupled (best run at id=3, seed=99971)
+Best rel error=0.0095
+     Best time=2.5688
+
+ Run #1 for solver (using rng seed 99991): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 45, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.896856e-01 f-delta = 2.5e-04
+ Iter 20: f = 9.911420e-01 f-delta = 9.5e-05
+ Iter 30: f = 9.917598e-01 f-delta = 4.5e-05
+ Iter 40: f = 9.921159e-01 f-delta = 2.9e-05
+ Iter 50: f = 9.923531e-01 f-delta = 2.0e-05
+ Final f = 9.923531e-01 
+
+ Run #2 for solver (using rng seed 99989): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 45, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.898720e-01 f-delta = 2.5e-04
+ Iter 20: f = 9.911308e-01 f-delta = 7.7e-05
+ Iter 30: f = 9.917163e-01 f-delta = 4.7e-05
+ Iter 40: f = 9.920914e-01 f-delta = 3.1e-05
+ Iter 50: f = 9.923511e-01 f-delta = 2.3e-05
+ Final f = 9.923511e-01 
+
+ Run #3 for solver (using rng seed 99971): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 45, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.900281e-01 f-delta = 2.2e-04
+ Iter 20: f = 9.910221e-01 f-delta = 5.8e-05
+ Iter 30: f = 9.914414e-01 f-delta = 3.2e-05
+ Iter 40: f = 9.916977e-01 f-delta = 2.1e-05
+ Iter 50: f = 9.918798e-01 f-delta = 1.6e-05
+ Final f = 9.918798e-01 
+        Solver=direct_decoupled (best run at id=1, seed=99991)
+Best rel error=0.0076
+     Best time=2.5077
+
+ Run #1 for solver (using rng seed 99991): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 50, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.910187e-01 f-delta = 2.8e-04
+ Iter 20: f = 9.924021e-01 f-delta = 7.9e-05
+ Iter 30: f = 9.929283e-01 f-delta = 3.9e-05
+ Iter 40: f = 9.932439e-01 f-delta = 2.7e-05
+ Iter 50: f = 9.934832e-01 f-delta = 2.1e-05
+ Final f = 9.934832e-01 
+
+ Run #2 for solver (using rng seed 99989): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 50, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.911521e-01 f-delta = 2.2e-04
+ Iter 20: f = 9.923325e-01 f-delta = 7.5e-05
+ Iter 30: f = 9.928762e-01 f-delta = 4.1e-05
+ Iter 40: f = 9.931863e-01 f-delta = 2.5e-05
+ Iter 50: f = 9.933892e-01 f-delta = 1.7e-05
+ Final f = 9.933892e-01 
+
+ Run #3 for solver (using rng seed 99971): direct_decoupled
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 50, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct_decoupled, direct_decoupled, direct_decoupled
+ Iter 10: f = 9.910685e-01 f-delta = 2.0e-04
+ Iter 20: f = 9.921429e-01 f-delta = 7.3e-05
+ Iter 30: f = 9.926971e-01 f-delta = 4.5e-05
+ Iter 40: f = 9.930817e-01 f-delta = 3.4e-05
+ Iter 50: f = 9.933800e-01 f-delta = 2.7e-05
+ Final f = 9.933800e-01 
+        Solver=direct_decoupled (best run at id=1, seed=99991)
+Best rel error=0.0065
+     Best time=3.2075
+
+ Run #1 for solver (using rng seed 99991): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 5, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter  6: f = 8.497170e-01 f-delta = 5.4e-07
+ Final f = 8.497170e-01 
+
+ Run #2 for solver (using rng seed 99989): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 5, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 8.526846e-01 f-delta = 7.8e-04
+ Iter 20: f = 8.740581e-01 f-delta = 2.6e-05
+ Iter 30: f = 8.741805e-01 f-delta = 7.6e-06
+ Iter 40: f = 8.742385e-01 f-delta = 4.8e-06
+ Iter 50: f = 8.742788e-01 f-delta = 3.5e-06
+ Final f = 8.742788e-01 
+
+ Run #3 for solver (using rng seed 99971): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 5, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 8.737744e-01 f-delta = 3.5e-04
+ Iter 20: f = 8.741216e-01 f-delta = 9.3e-06
+ Iter 30: f = 8.741970e-01 f-delta = 6.6e-06
+ Iter 40: f = 8.742536e-01 f-delta = 5.0e-06
+ Iter 50: f = 8.742967e-01 f-delta = 3.8e-06
+ Final f = 8.742967e-01 
+        Solver=direct (best run at id=3, seed=99971)
+Best rel error=0.1257
+     Best time=5.7170
+
+ Run #1 for solver (using rng seed 99991): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 10, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.395828e-01 f-delta = 1.4e-03
+ Iter 20: f = 9.429743e-01 f-delta = 3.1e-04
+ Iter 30: f = 9.484743e-01 f-delta = 6.1e-04
+ Iter 40: f = 9.512316e-01 f-delta = 1.2e-04
+ Iter 50: f = 9.519102e-01 f-delta = 4.4e-05
+ Final f = 9.519102e-01 
+
+ Run #2 for solver (using rng seed 99989): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 10, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.438011e-01 f-delta = 1.8e-03
+ Iter 20: f = 9.491690e-01 f-delta = 2.0e-04
+ Iter 30: f = 9.509202e-01 f-delta = 1.7e-04
+ Iter 40: f = 9.522414e-01 f-delta = 9.2e-05
+ Iter 50: f = 9.528111e-01 f-delta = 3.7e-05
+ Final f = 9.528111e-01 
+
+ Run #3 for solver (using rng seed 99971): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 10, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.410089e-01 f-delta = 7.1e-04
+ Iter 20: f = 9.441286e-01 f-delta = 1.5e-04
+ Iter 30: f = 9.455764e-01 f-delta = 1.9e-04
+ Iter 40: f = 9.486894e-01 f-delta = 3.8e-04
+ Iter 50: f = 9.514788e-01 f-delta = 1.4e-04
+ Final f = 9.514788e-01 
+        Solver=direct (best run at id=2, seed=99989)
+Best rel error=0.0472
+     Best time=18.6418
+
+ Run #1 for solver (using rng seed 99991): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 15, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.623346e-01 f-delta = 2.7e-04
+ Iter 20: f = 9.669873e-01 f-delta = 2.6e-04
+ Iter 30: f = 9.680908e-01 f-delta = 7.1e-05
+ Iter 40: f = 9.686684e-01 f-delta = 5.1e-05
+ Iter 50: f = 9.691394e-01 f-delta = 4.6e-05
+ Final f = 9.691394e-01 
+
+ Run #2 for solver (using rng seed 99989): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 15, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.657005e-01 f-delta = 4.1e-04
+ Iter 20: f = 9.680844e-01 f-delta = 1.6e-04
+ Iter 30: f = 9.692930e-01 f-delta = 9.6e-05
+ Iter 40: f = 9.701435e-01 f-delta = 8.2e-05
+ Iter 50: f = 9.708747e-01 f-delta = 6.0e-05
+ Final f = 9.708747e-01 
+
+ Run #3 for solver (using rng seed 99971): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 15, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.607367e-01 f-delta = 5.9e-04
+ Iter 20: f = 9.628973e-01 f-delta = 1.2e-04
+ Iter 30: f = 9.638081e-01 f-delta = 7.5e-05
+ Iter 40: f = 9.644471e-01 f-delta = 5.8e-05
+ Iter 50: f = 9.649783e-01 f-delta = 5.0e-05
+ Final f = 9.649783e-01 
+        Solver=direct (best run at id=2, seed=99989)
+Best rel error=0.0291
+     Best time=45.1403
+
+ Run #1 for solver (using rng seed 99991): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 20, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.745512e-01 f-delta = 4.7e-04
+ Iter 20: f = 9.768008e-01 f-delta = 1.1e-04
+ Iter 30: f = 9.775501e-01 f-delta = 5.9e-05
+ Iter 40: f = 9.780403e-01 f-delta = 4.2e-05
+ Iter 50: f = 9.783777e-01 f-delta = 2.8e-05
+ Final f = 9.783777e-01 
+
+ Run #2 for solver (using rng seed 99989): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 20, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.717795e-01 f-delta = 3.9e-04
+ Iter 20: f = 9.744952e-01 f-delta = 1.9e-04
+ Iter 30: f = 9.759134e-01 f-delta = 1.1e-04
+ Iter 40: f = 9.769098e-01 f-delta = 8.9e-05
+ Iter 50: f = 9.776517e-01 f-delta = 6.1e-05
+ Final f = 9.776517e-01 
+
+ Run #3 for solver (using rng seed 99971): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 20, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.727938e-01 f-delta = 4.4e-04
+ Iter 20: f = 9.748592e-01 f-delta = 1.0e-04
+ Iter 30: f = 9.758626e-01 f-delta = 1.1e-04
+ Iter 40: f = 9.767484e-01 f-delta = 6.5e-05
+ Iter 50: f = 9.772289e-01 f-delta = 3.8e-05
+ Final f = 9.772289e-01 
+        Solver=direct (best run at id=1, seed=99991)
+Best rel error=0.0216
+     Best time=83.0575
+
+ Run #1 for solver (using rng seed 99991): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 25, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.773690e-01 f-delta = 3.5e-04
+ Iter 20: f = 9.791447e-01 f-delta = 8.5e-05
+ Iter 30: f = 9.796869e-01 f-delta = 4.1e-05
+ Iter 40: f = 9.800583e-01 f-delta = 3.5e-05
+ Iter 50: f = 9.804069e-01 f-delta = 3.5e-05
+ Final f = 9.804069e-01 
+
+ Run #2 for solver (using rng seed 99989): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 25, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.781218e-01 f-delta = 2.8e-04
+ Iter 20: f = 9.797685e-01 f-delta = 9.4e-05
+ Iter 30: f = 9.803318e-01 f-delta = 4.2e-05
+ Iter 40: f = 9.807012e-01 f-delta = 3.3e-05
+ Iter 50: f = 9.809924e-01 f-delta = 2.6e-05
+ Final f = 9.809924e-01 
+
+ Run #3 for solver (using rng seed 99971): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 25, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.770253e-01 f-delta = 4.3e-04
+ Iter 20: f = 9.788488e-01 f-delta = 8.3e-05
+ Iter 30: f = 9.794649e-01 f-delta = 5.1e-05
+ Iter 40: f = 9.798919e-01 f-delta = 3.7e-05
+ Iter 50: f = 9.802081e-01 f-delta = 2.8e-05
+ Final f = 9.802081e-01 
+        Solver=direct (best run at id=2, seed=99989)
+Best rel error=0.0190
+     Best time=137.9812
+
+ Run #1 for solver (using rng seed 99991): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 30, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.817218e-01 f-delta = 2.5e-04
+ Iter 20: f = 9.835316e-01 f-delta = 1.3e-04
+ Iter 30: f = 9.844081e-01 f-delta = 6.7e-05
+ Iter 40: f = 9.849902e-01 f-delta = 5.4e-05
+ Iter 50: f = 9.855016e-01 f-delta = 4.9e-05
+ Final f = 9.855016e-01 
+
+ Run #2 for solver (using rng seed 99989): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 30, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.815166e-01 f-delta = 1.7e-04
+ Iter 20: f = 9.824190e-01 f-delta = 6.4e-05
+ Iter 30: f = 9.830196e-01 f-delta = 6.4e-05
+ Iter 40: f = 9.841392e-01 f-delta = 1.3e-04
+ Iter 50: f = 9.850693e-01 f-delta = 7.8e-05
+ Final f = 9.850693e-01 
+
+ Run #3 for solver (using rng seed 99971): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 30, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.812496e-01 f-delta = 2.3e-04
+ Iter 20: f = 9.824285e-01 f-delta = 7.6e-05
+ Iter 30: f = 9.830606e-01 f-delta = 6.4e-05
+ Iter 40: f = 9.840799e-01 f-delta = 1.3e-04
+ Iter 50: f = 9.851042e-01 f-delta = 7.3e-05
+ Final f = 9.851042e-01 
+        Solver=direct (best run at id=1, seed=99991)
+Best rel error=0.0145
+     Best time=209.4847
+
+ Run #1 for solver (using rng seed 99991): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 35, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.851455e-01 f-delta = 3.1e-04
+ Iter 20: f = 9.869556e-01 f-delta = 1.2e-04
+ Iter 30: f = 9.878012e-01 f-delta = 6.6e-05
+ Iter 40: f = 9.883393e-01 f-delta = 4.7e-05
+ Iter 50: f = 9.887493e-01 f-delta = 3.6e-05
+ Final f = 9.887493e-01 
+
+ Run #2 for solver (using rng seed 99989): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 35, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.849900e-01 f-delta = 2.8e-04
+ Iter 20: f = 9.865947e-01 f-delta = 9.8e-05
+ Iter 30: f = 9.873149e-01 f-delta = 5.8e-05
+ Iter 40: f = 9.877972e-01 f-delta = 4.2e-05
+ Iter 50: f = 9.881724e-01 f-delta = 3.5e-05
+ Final f = 9.881724e-01 
+
+ Run #3 for solver (using rng seed 99971): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 35, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.837599e-01 f-delta = 2.8e-04
+ Iter 20: f = 9.853203e-01 f-delta = 1.3e-04
+ Iter 30: f = 9.865863e-01 f-delta = 9.3e-05
+ Iter 40: f = 9.872674e-01 f-delta = 5.7e-05
+ Iter 50: f = 9.877553e-01 f-delta = 4.3e-05
+ Final f = 9.877553e-01 
+        Solver=direct (best run at id=1, seed=99991)
+Best rel error=0.0113
+     Best time=304.7044
+
+ Run #1 for solver (using rng seed 99991): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 40, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.872134e-01 f-delta = 2.5e-04
+ Iter 20: f = 9.887635e-01 f-delta = 1.1e-04
+ Iter 30: f = 9.895719e-01 f-delta = 6.1e-05
+ Iter 40: f = 9.900282e-01 f-delta = 3.6e-05
+ Iter 50: f = 9.903177e-01 f-delta = 2.4e-05
+ Final f = 9.903177e-01 
+
+ Run #2 for solver (using rng seed 99989): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 40, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.872788e-01 f-delta = 2.6e-04
+ Iter 20: f = 9.886896e-01 f-delta = 9.2e-05
+ Iter 30: f = 9.893295e-01 f-delta = 5.0e-05
+ Iter 40: f = 9.897930e-01 f-delta = 4.6e-05
+ Iter 50: f = 9.902490e-01 f-delta = 4.4e-05
+ Final f = 9.902490e-01 
+
+ Run #3 for solver (using rng seed 99971): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 40, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.873517e-01 f-delta = 2.7e-04
+ Iter 20: f = 9.889243e-01 f-delta = 1.1e-04
+ Iter 30: f = 9.897381e-01 f-delta = 6.3e-05
+ Iter 40: f = 9.902094e-01 f-delta = 3.7e-05
+ Iter 50: f = 9.904981e-01 f-delta = 2.4e-05
+ Final f = 9.904981e-01 
+        Solver=direct (best run at id=3, seed=99971)
+Best rel error=0.0095
+     Best time=420.7903
+
+ Run #1 for solver (using rng seed 99991): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 45, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.896856e-01 f-delta = 2.5e-04
+ Iter 20: f = 9.911420e-01 f-delta = 9.5e-05
+ Iter 30: f = 9.917598e-01 f-delta = 4.5e-05
+ Iter 40: f = 9.921159e-01 f-delta = 2.9e-05
+ Iter 50: f = 9.923531e-01 f-delta = 2.0e-05
+ Final f = 9.923531e-01 
+
+ Run #2 for solver (using rng seed 99989): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 45, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.898720e-01 f-delta = 2.5e-04
+ Iter 20: f = 9.911308e-01 f-delta = 7.7e-05
+ Iter 30: f = 9.917163e-01 f-delta = 4.7e-05
+ Iter 40: f = 9.920914e-01 f-delta = 3.1e-05
+ Iter 50: f = 9.923511e-01 f-delta = 2.3e-05
+ Final f = 9.923511e-01 
+
+ Run #3 for solver (using rng seed 99971): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 45, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.900281e-01 f-delta = 2.2e-04
+ Iter 20: f = 9.910221e-01 f-delta = 5.8e-05
+ Iter 30: f = 9.914414e-01 f-delta = 3.2e-05
+ Iter 40: f = 9.916977e-01 f-delta = 2.1e-05
+ Iter 50: f = 9.918798e-01 f-delta = 1.6e-05
+ Final f = 9.918798e-01 
+        Solver=direct (best run at id=1, seed=99991)
+Best rel error=0.0076
+     Best time=555.1131
+
+ Run #1 for solver (using rng seed 99991): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 50, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.910187e-01 f-delta = 2.8e-04
+ Iter 20: f = 9.924021e-01 f-delta = 7.9e-05
+ Iter 30: f = 9.929283e-01 f-delta = 3.9e-05
+ Iter 40: f = 9.932439e-01 f-delta = 2.7e-05
+ Iter 50: f = 9.934832e-01 f-delta = 2.1e-05
+ Final f = 9.934832e-01 
+
+ Run #2 for solver (using rng seed 99989): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 50, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.911521e-01 f-delta = 2.2e-04
+ Iter 20: f = 9.923325e-01 f-delta = 7.5e-05
+ Iter 30: f = 9.928762e-01 f-delta = 4.1e-05
+ Iter 40: f = 9.931863e-01 f-delta = 2.5e-05
+ Iter 50: f = 9.933892e-01 f-delta = 1.7e-05
+ Final f = 9.933892e-01 
+
+ Run #3 for solver (using rng seed 99971): direct
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_aligned of size [199 449 151]
+ infinite modes = [true true true]
+ R = 50, maxiters = 50, tol = 1.000000e-06
+ init = random,  nonneg = 0
+ solver (inner) = direct, direct, direct
+ Iter 10: f = 9.910685e-01 f-delta = 2.0e-04
+ Iter 20: f = 9.921429e-01 f-delta = 7.3e-05
+ Iter 30: f = 9.926971e-01 f-delta = 4.5e-05
+ Iter 40: f = 9.930817e-01 f-delta = 3.4e-05
+ Iter 50: f = 9.933800e-01 f-delta = 2.7e-05
+ Final f = 9.933800e-01 
+        Solver=direct (best run at id=1, seed=99991)
+Best rel error=0.0065
+     Best time=739.6951
+run end: 23-Mar-2026 09:23:33

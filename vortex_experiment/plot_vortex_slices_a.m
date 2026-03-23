@@ -11,6 +11,7 @@
 % 01/18/26, J.B., reproduce vortex slices
 % 01/29/26, J.B., Remove labelling
 % 02/03/26, J.B., Use only exportgraphics
+% 03/23/26, J.B., Updating the seeds
 
 %% Check paths
 % Ensure tensor_toolbox is in path
@@ -68,8 +69,8 @@ genargs  = {'printitn',10,'tol',1e-6,'maxiters',50,'trace',true};
 nsamples = 50000;
 rho      = 1e-6; % 0
 xrange   = [min(X(:)),max(X(:))];
-seeds    = [99971,99991];
-hasdirect = 1;
+seeds    = [99991,99991]; 
+hasdirect = 0;
 
 % Print experiment infos and start diary
 rr  = matlabRelease;
@@ -97,8 +98,11 @@ rng(0,'twister');
 X       = tensor_unaligned(X, nsamples);
 solvs   = {'pcg','direct_nonsym'};
 solvs1  = {'pcg','direct nonsym'};
-solvs   = {'pcg'};
-solvs1  = {'pcg'};
+
+if hasdirect==0
+    solvs   = {'pcg'};
+    solvs1  = {'pcg'};
+end
 
 MS      = cell(length(solvs),1);
 times   = zeros(length(solvs),1);
