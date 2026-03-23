@@ -5,7 +5,7 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
 
 **Reproducibility**: 
 
-* All results in this repository [commit `TBD`] were obtained using the [CP-HIFI Code](https://github.com/tgkolda/cp_hifi_code) [commit `a1f74a4`] 
+* All results in this repository [commit `57cff5a`] were obtained using the [CP-HIFI Code](https://github.com/tgkolda/cp_hifi_code) [commit `a1f74a4`] 
    
 ## Setup
 
@@ -51,7 +51,7 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
     ```
     git clone https://github.com/tgkolda/cp_hifi_fast_exps
     cd cp_hifi_fast_exps
-    git checkout TBD
+    git checkout 57cff5a
     ```
 
 
