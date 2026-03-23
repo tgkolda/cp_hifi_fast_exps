@@ -5,7 +5,7 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
 
 **Reproducibility**: 
 
-* All results in this repository [commit `TBD`] were obtained using the [CP-HIFI Code](https://github.com/tgkolda/cp_hifi_code) [commit `f4159f0`] 
+* All results in this repository [commit `TBD`] were obtained using the [CP-HIFI Code](https://github.com/tgkolda/cp_hifi_code) [commit `a1f74a4`] 
    
 ## Setup
 
@@ -42,7 +42,7 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
     ```
     git clone https://github.com/tgkolda/cp_hifi_code
     cd cp_hifi_code 
-    git checkout f4159f0
+    git checkout a1f74a4
     cd ..
     ```
 
@@ -148,14 +148,15 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
 
 ## Vortex Slice Images
 
-To generate the vortex slice images:
+* To generate the vortex slice images:
         
+    
     ``` matlab
     cd vortex_experiments
     plot_vortex_slices_a
     cd ..
     ```
-    
+        
     This produces the following files:
      * `paper_figs/vortex_original_a_exp.pdf` Original frontal slice no. 151 of the vortex tensor
      * `paper_figs/vortex_samp_a_exp.pdf` Original frontal slice no. 151 of the vortex tensor sampled at 50,000 points
