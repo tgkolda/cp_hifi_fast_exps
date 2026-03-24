@@ -116,6 +116,7 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
         run_aligned_miranda
         cd ..
         ```
+
         This produces the following files:
         * `results/miranda_aligned_log_DD-Mmm-YYYY-HH_MM_SS.txt` 
         * `results/miranda_aligned_[solver]_all.txt` 
@@ -128,6 +129,7 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
         run_unaligned_miranda
         cd ..
         ```
+
         This produces the following files:
         * `results/miranda_unaligned_log_DD-Mmm-YYYY-HH_MM_SS.txt` 
         * `results/miranda_unaligned_[solver]_all.txt` 
@@ -139,7 +141,7 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
 * The folder `results/` stores outputs from the various runs of `run_[type]_[dataset].m`. 
     * Log files: `[dataset]_[type]_log_[datestamp].txt` 
     * All runs of a particular solver (i.e., three repetitions with different seeds) are in files `[dataset]_[type]_[solver]_all.txt`. These contain the rank ($r$), runid (run identifier in {1,2,3}), seed (random seed), time (total runtime), rerr (relative error), it (total outer iterations) for all runs using the specified solver
-    These files contain the rank and seed information to potentially replicate each run.
+    These files contain the rank and seed information to replicate each run.
     * Best runs of a particular solver are in `[dataset]_[type]_[solver]_best.txt`
     * Direct solvers (because they are slow to run) also store a run "trace". These are in `[dataset]_[type]_[solver]_trace.mat`. The `.mat` files are 10x2 cell arrays where the first entry   corresponds to the problem rank. The second entry is a 3x3 cell array, that stores `run_id`, `seed`, and `info` where `info` is a struct that contains the detailed traces for this run.
 * The folder `pager_figs/` contains pre-processed data from `results/`. The files are created by running the scripts `genalltabs.m`.  It contains 
@@ -148,8 +150,7 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
 
 ## Vortex Slice Images
 
-* To generate the vortex slice images:
-        
+* To generate the vortex slice images:        
     
     ``` matlab
     cd vortex_experiments
