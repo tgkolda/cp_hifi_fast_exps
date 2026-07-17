@@ -5,7 +5,8 @@ and the [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org) (Bader, Kolda
 
 **Reproducibility**: 
 
-* All results in this repository [commit `57cff5a`] were obtained using the [CP-HIFI Code](https://github.com/tgkolda/cp_hifi_code) [commit `a1f74a4`] 
+* The main results in this repository [commit `57cff5a`] were obtained using the [CP-HIFI Code](https://github.com/tgkolda/cp_hifi_code) [commit `a1f74a4`]
+  <br/>(results with various preconditioners were added in [commit `d59cddb`], using the same CP-HIFI Code)
    
 ## Setup
 
