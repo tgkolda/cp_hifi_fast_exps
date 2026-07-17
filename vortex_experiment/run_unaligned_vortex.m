@@ -1,5 +1,7 @@
 %%RUN_UNALIGNED_VORTEX Runs unaligned vortex experiment.
 % By setting the flag HASDIRECT=0, the direct methods (slow) are not evaluated
+% Set ONLYPRECOND=1 to just evaluate the additional preconditioners. This
+% was off for the original results
 %
 % See also CP_ALS_HIFI.
 
@@ -9,6 +11,7 @@
 %
 % 01/09/26, J.B., reorganizing how to save data
 % 03/20/26, J.B., remove direct_sym, and fix rho=1e-6 for pcg
+% 07/16/26, J.B., flag to run preconditioners only
 
 %% Check paths
 % Ensure tensor_toolbox is in path
@@ -64,7 +67,9 @@ genargs  = {'printitn',10,'tol',1e-6,'maxiters',50,'trace',true};
 seeds    = maxk(primes(100000),nruns);
 nsamples = 50000;
 
-hasdirect = 0;
+% flags to include direct and/or preconditioner comparison
+hasdirect   = 0;
+precondonly = 0;
 
 rng(0,'twister');
 fprintf('\n Creating unaligned tensor with %d samples...\n', nsamples);
@@ -92,42 +97,59 @@ fprintf('\n');
 
 
 %% Run pcg fast
-solveargs       = cell(1,1);
-solveargs{1}    = {'solver','pcg','inmaxit', 75, 'intol', 1e-6};
+% an additional flag for running only preconditioners
 
-best_exp_tab    = table('Size',[length(R) 6], ...
-    'VariableTypes',{'double','double','double','double','double','double'}, ...
-    'VariableNames',{'rank'  , 'runid', 'seed'  ,'time'  ,'rerr'  ,'it'});
-all_exp_tab     = table('Size',[nruns*length(R) 6], ...
-    'VariableTypes',{'double','double','double','double','double','double'}, ...
-    'VariableNames',{'rank'  , 'runid', 'seed'  ,'time'  ,'rerr'  ,'it'});
+if precondonly == 0
+    solveargsFAST   = cell(1,1); 
+    solveargsFAST{1}= {'solver','pcg',   'inmaxit', 75, 'intol', 1e-6};
+else
+    solveargsFAST   = cell(3,1); 
+    solveargsFAST{1}= {'solver','cg',    'inmaxit', 75, 'intol', 1e-6};
+    solveargsFAST{2}= {'solver','pcg_v1','inmaxit', 75, 'intol', 1e-6};
+    solveargsFAST{3}= {'solver','pcg_v2','inmaxit', 75, 'intol', 1e-6};    
+end
 
-for i=1:length(R)
-    fnmstem = [datadir,pname,'_',ptype,'_'];
-    [best_runs_tab, all_runs_tab] = run_unaligned(Xorig,X,R(i),hifiinfo,genargs,solveargs,nruns,seeds,0,'.');
+for ii=1:length(solveargsFAST)
 
-    best_exp_tab{i,1}       = R(i);
-    best_exp_tab{i,2:end}   = [best_runs_tab.RunId(:) best_runs_tab.Seed(:) best_runs_tab.Time(:) best_runs_tab.RelErr(:) best_runs_tab.Iters(:)];
-
-    idx                     = ((i-1)*nruns+1):(i*nruns);
-    all_exp_tab{idx,1}      = R(i);
-    all_exp_tab{idx,2:end}  = [all_runs_tab.RunId(:) all_runs_tab.Seed(:) all_runs_tab.Time(:) all_runs_tab.RelErr(:) all_runs_tab.Iters(:)];
+    solveargs       = cell(1,1);
+    solveargs{1}    = solveargsFAST{ii};
+    
+    best_exp_tab    = table('Size',[length(R) 6], ...
+        'VariableTypes',{'double','double','double','double','double','double'}, ...
+        'VariableNames',{'rank'  , 'runid', 'seed'  ,'time'  ,'rerr'  ,'it'});
+    all_exp_tab     = table('Size',[nruns*length(R) 6], ...
+        'VariableTypes',{'double','double','double','double','double','double'}, ...
+        'VariableNames',{'rank'  , 'runid', 'seed'  ,'time'  ,'rerr'  ,'it'});
+    
+    for i=1:length(R)
+        fnmstem = [datadir,pname,'_',ptype,'_'];
+        [best_runs_tab, all_runs_tab] = run_unaligned(Xorig,X,R(i),hifiinfo,genargs,solveargs,nruns,seeds,0,'.');
+    
+        best_exp_tab{i,1}       = R(i);
+        best_exp_tab{i,2:end}   = [best_runs_tab.RunId(:) best_runs_tab.Seed(:) best_runs_tab.Time(:) best_runs_tab.RelErr(:) best_runs_tab.Iters(:)];
+    
+        idx                     = ((i-1)*nruns+1):(i*nruns);
+        all_exp_tab{idx,1}      = R(i);
+        all_exp_tab{idx,2:end}  = [all_runs_tab.RunId(:) all_runs_tab.Seed(:) all_runs_tab.Time(:) all_runs_tab.RelErr(:) all_runs_tab.Iters(:)];
+        
+    end
+    
+    % save tables
+    fname = fullfile([datadir,pname,'_',ptype,'_',solveargs{1}{2},'_best.txt']);
+    fid=fopen(fname,'w+');
+    fprintf(fid,'%s \n',sprintf('%% file: %s',mfilename));
+    fprintf(fid,'%s \n',sprintf('%% date: %s',string(datetime('now'))));
+    writetable(best_exp_tab, fname,'WriteMode','append',"WriteVariableNames",true);
+    
+    fname = fullfile([datadir,pname,'_',ptype,'_',solveargs{1}{2},'_all','.txt']);
+    fid=fopen(fname,'w+');
+    fprintf(fid,'%s \n',sprintf('%% file: %s',mfilename));
+    fprintf(fid,'%s \n',sprintf('%% date: %s',string(datetime('now'))));
+    fclose(fid);
+    writetable(all_exp_tab, fname, 'WriteMode','append',"WriteVariableNames",true);
 
 end
 
-% save tables
-fname = fullfile([datadir,pname,'_',ptype,'_',solveargs{1}{2},'_best.txt']);
-fid=fopen(fname,'w+');
-fprintf(fid,'%s \n',sprintf('%% file: %s',mfilename));
-fprintf(fid,'%s \n',sprintf('%% date: %s',string(datetime('now'))));
-writetable(best_exp_tab, fname,'WriteMode','append',"WriteVariableNames",true);
-
-fname = fullfile([datadir,pname,'_',ptype,'_',solveargs{1}{2},'_all','.txt']);
-fid=fopen(fname,'w+');
-fprintf(fid,'%s \n',sprintf('%% file: %s',mfilename));
-fprintf(fid,'%s \n',sprintf('%% date: %s',string(datetime('now'))));
-fclose(fid);
-writetable(all_exp_tab, fname, 'WriteMode','append',"WriteVariableNames",true);
 
 %% Run direct solvers (slow)
 solveargsSLOW     = cell(1,1);
