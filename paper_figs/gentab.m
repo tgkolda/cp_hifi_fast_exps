@@ -1,6 +1,6 @@
-function [timet,errt] = gentab(datapath,writepath,pname,ptype)
+function [timet,errt] = gentab(datapath,writepath,pname,ptype,snames)
 %GENTAB Generates experiment tables
-%   [TIMET,ERRT] = GENTAB(DATAPATH,WRITEPATH,PNAME,PTYPE)
+%   [TIMET,ERRT] = GENTAB(DATAPATH,WRITEPATH,PNAME,PTYPE,SNAMES)
 %   Returns the experiment times and errors in TIMET and ERRT. 
 %   PNAME is the problem e.g., 'vortex' and PTYPE is the type, e.g., 
 %   'aligned'. Stores the tables such as miranda_times_alinged.txt 
@@ -10,6 +10,7 @@ function [timet,errt] = gentab(datapath,writepath,pname,ptype)
 % 11/06/25, J.B., preparation for release
 % 01/12/26, J.B., updated version
 % 03/23/26, J.B., skip generation of 
+% 07/16/26, J.B., addition of snames argument
 
 % Add data to the path
 addpath(datapath);
@@ -19,10 +20,12 @@ probname = pname;
 
 nstem_  = [datapath,'/',probname];
 smps    = 50000;
-if strcmp(ptype,'aligned')
-    snames = {'pcg','direct_decoupled','direct'};
-else
-    snames = {'pcg','direct_nonsym'}; % ,'direct_sym'
+if isempty(snames)
+    if strcmp(ptype,'aligned') 
+        snames = {'pcg','direct_decoupled','direct'};
+    else
+        snames = {'pcg','direct_nonsym'}; % ,'direct_sym'
+    end
 end
 
 nsolv   = length(snames);
