@@ -1,0 +1,1076 @@
+
+*************** amino experiment **********          
+*           Software: Matlab R2024b                     
+*             System: PCWIN64                            
+*               File: run_amino_exps                            
+*                                                   
+*         nruns(ALS): 5                            
+*           nsamples: 5000  2500  1000   500                            
+*                                                   
+*           datetime: 22-Jul-2026 15:39:13                            
+*************************************************** 
+
+
+CP_ALS (CP Alternating Least Squares):
+
+ Tensor size: [201 61 5]
+ Tensor type: tensor
+ R = 3, maxiters = 50, tol = 1.000000e-04
+ dimorder = [1 2 3]
+ init = random
+
+ Iter  1: f = 5.977962e-01 f-delta = 6.0e-01
+ Iter  2: f = 8.078974e-01 f-delta = 2.1e-01
+ Iter  3: f = 8.602284e-01 f-delta = 5.2e-02
+ Iter  4: f = 8.918684e-01 f-delta = 3.2e-02
+ Iter  5: f = 9.115235e-01 f-delta = 2.0e-02
+ Iter  6: f = 9.267957e-01 f-delta = 1.5e-02
+ Iter  7: f = 9.383530e-01 f-delta = 1.2e-02
+ Iter  8: f = 9.456616e-01 f-delta = 7.3e-03
+ Iter  9: f = 9.500062e-01 f-delta = 4.3e-03
+ Iter 10: f = 9.530079e-01 f-delta = 3.0e-03
+ Iter 11: f = 9.554672e-01 f-delta = 2.5e-03
+ Iter 12: f = 9.576446e-01 f-delta = 2.2e-03
+ Iter 13: f = 9.596140e-01 f-delta = 2.0e-03
+ Iter 14: f = 9.613996e-01 f-delta = 1.8e-03
+ Iter 15: f = 9.630138e-01 f-delta = 1.6e-03
+ Iter 16: f = 9.644667e-01 f-delta = 1.5e-03
+ Iter 17: f = 9.657683e-01 f-delta = 1.3e-03
+ Iter 18: f = 9.669293e-01 f-delta = 1.2e-03
+ Iter 19: f = 9.679603e-01 f-delta = 1.0e-03
+ Iter 20: f = 9.688721e-01 f-delta = 9.1e-04
+ Iter 21: f = 9.696754e-01 f-delta = 8.0e-04
+ Iter 22: f = 9.703808e-01 f-delta = 7.1e-04
+ Iter 23: f = 9.709980e-01 f-delta = 6.2e-04
+ Iter 24: f = 9.715367e-01 f-delta = 5.4e-04
+ Iter 25: f = 9.720056e-01 f-delta = 4.7e-04
+ Iter 26: f = 9.724127e-01 f-delta = 4.1e-04
+ Iter 27: f = 9.727655e-01 f-delta = 3.5e-04
+ Iter 28: f = 9.730708e-01 f-delta = 3.1e-04
+ Iter 29: f = 9.733345e-01 f-delta = 2.6e-04
+ Iter 30: f = 9.735619e-01 f-delta = 2.3e-04
+ Iter 31: f = 9.737579e-01 f-delta = 2.0e-04
+ Iter 32: f = 9.739266e-01 f-delta = 1.7e-04
+ Iter 33: f = 9.740717e-01 f-delta = 1.5e-04
+ Iter 34: f = 9.741964e-01 f-delta = 1.2e-04
+ Iter 35: f = 9.743036e-01 f-delta = 1.1e-04
+ Iter 36: f = 9.743956e-01 f-delta = 9.2e-05
+ Final f = 9.743956e-01 
+Rel error for True: 0.0256044
+--- CP-HIFI with 5000 samples ---
+
+Run 1
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_unaligned of size [201 61 5], sparse with 5000 (8.2%) nonzeros
+ infinite modes = [true true false]
+ R = 3, maxiters = 50, tol = 1.000000e-04
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 50, 50, 50
+   tol  (inner) = 0.0001, 0.0001, 0.0001
+ Iter  1: f = 6.694655e-01 f-delta = 6.7e-01
+ Iter  2: f = 6.975346e-01 f-delta = 2.8e-02
+ Iter  3: f = 7.219621e-01 f-delta = 2.4e-02
+ Iter  4: f = 7.480201e-01 f-delta = 2.6e-02
+ Iter  5: f = 7.778215e-01 f-delta = 3.0e-02
+ Iter  6: f = 8.145115e-01 f-delta = 3.7e-02
+ Iter  7: f = 8.659127e-01 f-delta = 5.1e-02
+ Iter  8: f = 9.142976e-01 f-delta = 4.8e-02
+ Iter  9: f = 9.332744e-01 f-delta = 1.9e-02
+ Iter 10: f = 9.395676e-01 f-delta = 6.3e-03
+ Iter 11: f = 9.429425e-01 f-delta = 3.4e-03
+ Iter 12: f = 9.453444e-01 f-delta = 2.4e-03
+ Iter 13: f = 9.473372e-01 f-delta = 2.0e-03
+ Iter 14: f = 9.491223e-01 f-delta = 1.8e-03
+ Iter 15: f = 9.507752e-01 f-delta = 1.7e-03
+ Iter 16: f = 9.523239e-01 f-delta = 1.5e-03
+ Iter 17: f = 9.537780e-01 f-delta = 1.5e-03
+ Iter 18: f = 9.551405e-01 f-delta = 1.4e-03
+ Iter 19: f = 9.564122e-01 f-delta = 1.3e-03
+ Iter 20: f = 9.575938e-01 f-delta = 1.2e-03
+ Iter 21: f = 9.586867e-01 f-delta = 1.1e-03
+ Iter 22: f = 9.596926e-01 f-delta = 1.0e-03
+ Iter 23: f = 9.606144e-01 f-delta = 9.2e-04
+ Iter 24: f = 9.614551e-01 f-delta = 8.4e-04
+ Iter 25: f = 9.622187e-01 f-delta = 7.6e-04
+ Iter 26: f = 9.629093e-01 f-delta = 6.9e-04
+ Iter 27: f = 9.635316e-01 f-delta = 6.2e-04
+ Iter 28: f = 9.640900e-01 f-delta = 5.6e-04
+ Iter 29: f = 9.645894e-01 f-delta = 5.0e-04
+ Iter 30: f = 9.650346e-01 f-delta = 4.5e-04
+ Iter 31: f = 9.654302e-01 f-delta = 4.0e-04
+ Iter 32: f = 9.657806e-01 f-delta = 3.5e-04
+ Iter 33: f = 9.660903e-01 f-delta = 3.1e-04
+ Iter 34: f = 9.663631e-01 f-delta = 2.7e-04
+ Iter 35: f = 9.666030e-01 f-delta = 2.4e-04
+ Iter 36: f = 9.668135e-01 f-delta = 2.1e-04
+ Iter 37: f = 9.669977e-01 f-delta = 1.8e-04
+ Iter 38: f = 9.671587e-01 f-delta = 1.6e-04
+ Iter 39: f = 9.672991e-01 f-delta = 1.4e-04
+ Iter 40: f = 9.674214e-01 f-delta = 1.2e-04
+ Iter 41: f = 9.675277e-01 f-delta = 1.1e-04
+ Iter 42: f = 9.676200e-01 f-delta = 9.2e-05
+ Final f = 9.676200e-01 
+--- CP-HIFI with 2500 samples ---
+
+Run 1
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_unaligned of size [201 61 5], sparse with 2500 (4.1%) nonzeros
+ infinite modes = [true true false]
+ R = 3, maxiters = 50, tol = 1.000000e-04
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 50, 50, 50
+   tol  (inner) = 0.0001, 0.0001, 0.0001
+ Iter  1: f = 6.324980e-01 f-delta = 6.3e-01
+ Iter  2: f = 7.574118e-01 f-delta = 1.2e-01
+ Iter  3: f = 8.054688e-01 f-delta = 4.8e-02
+ Iter  4: f = 8.511680e-01 f-delta = 4.6e-02
+ Iter  5: f = 8.866724e-01 f-delta = 3.6e-02
+ Iter  6: f = 9.107266e-01 f-delta = 2.4e-02
+ Iter  7: f = 9.269292e-01 f-delta = 1.6e-02
+ Iter  8: f = 9.374536e-01 f-delta = 1.1e-02
+ Iter  9: f = 9.438473e-01 f-delta = 6.4e-03
+ Iter 10: f = 9.478422e-01 f-delta = 4.0e-03
+ Iter 11: f = 9.506642e-01 f-delta = 2.8e-03
+ Iter 12: f = 9.528990e-01 f-delta = 2.2e-03
+ Iter 13: f = 9.547788e-01 f-delta = 1.9e-03
+ Iter 14: f = 9.563979e-01 f-delta = 1.6e-03
+ Iter 15: f = 9.578023e-01 f-delta = 1.4e-03
+ Iter 16: f = 9.590206e-01 f-delta = 1.2e-03
+ Iter 17: f = 9.600751e-01 f-delta = 1.1e-03
+ Iter 18: f = 9.609849e-01 f-delta = 9.1e-04
+ Iter 19: f = 9.617670e-01 f-delta = 7.8e-04
+ Iter 20: f = 9.624373e-01 f-delta = 6.7e-04
+ Iter 21: f = 9.630100e-01 f-delta = 5.7e-04
+ Iter 22: f = 9.634981e-01 f-delta = 4.9e-04
+ Iter 23: f = 9.639131e-01 f-delta = 4.1e-04
+ Iter 24: f = 9.642653e-01 f-delta = 3.5e-04
+ Iter 25: f = 9.645636e-01 f-delta = 3.0e-04
+ Iter 26: f = 9.648160e-01 f-delta = 2.5e-04
+ Iter 27: f = 9.650293e-01 f-delta = 2.1e-04
+ Iter 28: f = 9.652094e-01 f-delta = 1.8e-04
+ Iter 29: f = 9.653613e-01 f-delta = 1.5e-04
+ Iter 30: f = 9.654893e-01 f-delta = 1.3e-04
+ Iter 31: f = 9.655972e-01 f-delta = 1.1e-04
+ Iter 32: f = 9.656881e-01 f-delta = 9.1e-05
+ Final f = 9.656881e-01 
+--- CP-HIFI with 1000 samples ---
+
+Run 1
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_unaligned of size [199 61 5], sparse with 1000 (1.6%) nonzeros
+ infinite modes = [true true false]
+ R = 3, maxiters = 50, tol = 1.000000e-04
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 50, 50, 50
+   tol  (inner) = 0.0001, 0.0001, 0.0001
+ Iter  1: f = 7.014945e-01 f-delta = 7.0e-01
+ Iter  2: f = 8.450480e-01 f-delta = 1.4e-01
+ Iter  3: f = 9.062830e-01 f-delta = 6.1e-02
+ Iter  4: f = 9.195947e-01 f-delta = 1.3e-02
+ Iter  5: f = 9.253654e-01 f-delta = 5.8e-03
+ Iter  6: f = 9.288647e-01 f-delta = 3.5e-03
+ Iter  7: f = 9.316587e-01 f-delta = 2.8e-03
+ Iter  8: f = 9.341563e-01 f-delta = 2.5e-03
+ Iter  9: f = 9.364629e-01 f-delta = 2.3e-03
+ Iter 10: f = 9.386062e-01 f-delta = 2.1e-03
+ Iter 11: f = 9.405942e-01 f-delta = 2.0e-03
+ Iter 12: f = 9.424312e-01 f-delta = 1.8e-03
+ Iter 13: f = 9.441213e-01 f-delta = 1.7e-03
+ Iter 14: f = 9.456698e-01 f-delta = 1.5e-03
+ Iter 15: f = 9.470828e-01 f-delta = 1.4e-03
+ Iter 16: f = 9.483702e-01 f-delta = 1.3e-03
+ Iter 17: f = 9.495341e-01 f-delta = 1.2e-03
+ Iter 18: f = 9.505848e-01 f-delta = 1.1e-03
+ Iter 19: f = 9.515308e-01 f-delta = 9.5e-04
+ Iter 20: f = 9.523805e-01 f-delta = 8.5e-04
+ Iter 21: f = 9.531419e-01 f-delta = 7.6e-04
+ Iter 22: f = 9.538229e-01 f-delta = 6.8e-04
+ Iter 23: f = 9.544308e-01 f-delta = 6.1e-04
+ Iter 24: f = 9.549725e-01 f-delta = 5.4e-04
+ Iter 25: f = 9.554547e-01 f-delta = 4.8e-04
+ Iter 26: f = 9.558832e-01 f-delta = 4.3e-04
+ Iter 27: f = 9.562636e-01 f-delta = 3.8e-04
+ Iter 28: f = 9.566010e-01 f-delta = 3.4e-04
+ Iter 29: f = 9.568999e-01 f-delta = 3.0e-04
+ Iter 30: f = 9.571646e-01 f-delta = 2.6e-04
+ Iter 31: f = 9.573988e-01 f-delta = 2.3e-04
+ Iter 32: f = 9.576060e-01 f-delta = 2.1e-04
+ Iter 33: f = 9.577890e-01 f-delta = 1.8e-04
+ Iter 34: f = 9.579507e-01 f-delta = 1.6e-04
+ Iter 35: f = 9.580935e-01 f-delta = 1.4e-04
+ Iter 36: f = 9.582196e-01 f-delta = 1.3e-04
+ Iter 37: f = 9.583308e-01 f-delta = 1.1e-04
+ Iter 38: f = 9.584289e-01 f-delta = 9.8e-05
+ Final f = 9.584289e-01 
+Run 2
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_unaligned of size [199 61 5], sparse with 1000 (1.6%) nonzeros
+ infinite modes = [true true false]
+ R = 3, maxiters = 50, tol = 1.000000e-04
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 50, 50, 50
+   tol  (inner) = 0.0001, 0.0001, 0.0001
+ Iter  1: f = 6.468746e-01 f-delta = 6.5e-01
+ Iter  2: f = 7.906241e-01 f-delta = 1.4e-01
+ Iter  3: f = 8.756915e-01 f-delta = 8.5e-02
+ Iter  4: f = 8.832401e-01 f-delta = 7.5e-03
+ Iter  5: f = 8.867958e-01 f-delta = 3.6e-03
+ Iter  6: f = 8.896974e-01 f-delta = 2.9e-03
+ Iter  7: f = 8.924172e-01 f-delta = 2.7e-03
+ Iter  8: f = 8.950953e-01 f-delta = 2.7e-03
+ Iter  9: f = 8.977683e-01 f-delta = 2.7e-03
+ Iter 10: f = 9.004308e-01 f-delta = 2.7e-03
+ Iter 11: f = 9.030670e-01 f-delta = 2.6e-03
+ Iter 12: f = 9.056603e-01 f-delta = 2.6e-03
+ Iter 13: f = 9.081962e-01 f-delta = 2.5e-03
+ Iter 14: f = 9.106642e-01 f-delta = 2.5e-03
+ Iter 15: f = 9.130571e-01 f-delta = 2.4e-03
+ Iter 16: f = 9.153707e-01 f-delta = 2.3e-03
+ Iter 17: f = 9.176040e-01 f-delta = 2.2e-03
+ Iter 18: f = 9.197574e-01 f-delta = 2.2e-03
+ Iter 19: f = 9.218327e-01 f-delta = 2.1e-03
+ Iter 20: f = 9.238329e-01 f-delta = 2.0e-03
+ Iter 21: f = 9.257611e-01 f-delta = 1.9e-03
+ Iter 22: f = 9.276206e-01 f-delta = 1.9e-03
+ Iter 23: f = 9.294143e-01 f-delta = 1.8e-03
+ Iter 24: f = 9.311450e-01 f-delta = 1.7e-03
+ Iter 25: f = 9.328147e-01 f-delta = 1.7e-03
+ Iter 26: f = 9.344252e-01 f-delta = 1.6e-03
+ Iter 27: f = 9.359774e-01 f-delta = 1.6e-03
+ Iter 28: f = 9.374720e-01 f-delta = 1.5e-03
+ Iter 29: f = 9.389090e-01 f-delta = 1.4e-03
+ Iter 30: f = 9.402883e-01 f-delta = 1.4e-03
+ Iter 31: f = 9.416092e-01 f-delta = 1.3e-03
+ Iter 32: f = 9.428713e-01 f-delta = 1.3e-03
+ Iter 33: f = 9.440739e-01 f-delta = 1.2e-03
+ Iter 34: f = 9.452163e-01 f-delta = 1.1e-03
+ Iter 35: f = 9.462982e-01 f-delta = 1.1e-03
+ Iter 36: f = 9.473196e-01 f-delta = 1.0e-03
+ Iter 37: f = 9.482805e-01 f-delta = 9.6e-04
+ Iter 38: f = 9.491817e-01 f-delta = 9.0e-04
+ Iter 39: f = 9.500239e-01 f-delta = 8.4e-04
+ Iter 40: f = 9.508086e-01 f-delta = 7.8e-04
+ Iter 41: f = 9.515374e-01 f-delta = 7.3e-04
+ Iter 42: f = 9.522123e-01 f-delta = 6.7e-04
+ Iter 43: f = 9.528354e-01 f-delta = 6.2e-04
+ Iter 44: f = 9.534092e-01 f-delta = 5.7e-04
+ Iter 45: f = 9.539364e-01 f-delta = 5.3e-04
+ Iter 46: f = 9.544195e-01 f-delta = 4.8e-04
+ Iter 47: f = 9.548613e-01 f-delta = 4.4e-04
+ Iter 48: f = 9.552647e-01 f-delta = 4.0e-04
+ Iter 49: f = 9.556323e-01 f-delta = 3.7e-04
+ Iter 50: f = 9.559667e-01 f-delta = 3.3e-04
+ Final f = 9.559667e-01 
+Run 3
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_unaligned of size [199 61 5], sparse with 1000 (1.6%) nonzeros
+ infinite modes = [true true false]
+ R = 3, maxiters = 50, tol = 1.000000e-04
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 50, 50, 50
+   tol  (inner) = 0.0001, 0.0001, 0.0001
+ Iter  1: f = 4.781213e-01 f-delta = 4.8e-01
+ Iter  2: f = 7.091581e-01 f-delta = 2.3e-01
+ Iter  3: f = 8.183837e-01 f-delta = 1.1e-01
+ Iter  4: f = 8.386725e-01 f-delta = 2.0e-02
+ Iter  5: f = 8.532400e-01 f-delta = 1.5e-02
+ Iter  6: f = 8.624945e-01 f-delta = 9.3e-03
+ Iter  7: f = 8.674443e-01 f-delta = 4.9e-03
+ Iter  8: f = 8.698301e-01 f-delta = 2.4e-03
+ Iter  9: f = 8.709450e-01 f-delta = 1.1e-03
+ Iter 10: f = 8.714787e-01 f-delta = 5.3e-04
+ Iter 11: f = 8.717496e-01 f-delta = 2.7e-04
+ Iter 12: f = 8.718984e-01 f-delta = 1.5e-04
+ Iter 13: f = 8.719882e-01 f-delta = 9.0e-05
+ Final f = 8.719882e-01 
+Run 4
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_unaligned of size [199 61 5], sparse with 1000 (1.6%) nonzeros
+ infinite modes = [true true false]
+ R = 3, maxiters = 50, tol = 1.000000e-04
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 50, 50, 50
+   tol  (inner) = 0.0001, 0.0001, 0.0001
+ Iter  1: f = 6.234738e-01 f-delta = 6.2e-01
+ Iter  2: f = 6.805714e-01 f-delta = 5.7e-02
+ Iter  3: f = 7.324320e-01 f-delta = 5.2e-02
+ Iter  4: f = 7.382543e-01 f-delta = 5.8e-03
+ Iter  5: f = 7.419031e-01 f-delta = 3.6e-03
+ Iter  6: f = 7.446376e-01 f-delta = 2.7e-03
+ Iter  7: f = 7.466683e-01 f-delta = 2.0e-03
+ Iter  8: f = 7.481601e-01 f-delta = 1.5e-03
+ Iter  9: f = 7.492655e-01 f-delta = 1.1e-03
+ Iter 10: f = 7.501059e-01 f-delta = 8.4e-04
+ Iter 11: f = 7.507760e-01 f-delta = 6.7e-04
+ Iter 12: f = 7.513540e-01 f-delta = 5.8e-04
+ Iter 13: f = 7.519171e-01 f-delta = 5.6e-04
+ Iter 14: f = 7.525538e-01 f-delta = 6.4e-04
+ Iter 15: f = 7.533329e-01 f-delta = 7.8e-04
+ Iter 16: f = 7.545411e-01 f-delta = 1.2e-03
+ Iter 17: f = 7.565681e-01 f-delta = 2.0e-03
+ Iter 18: f = 7.600952e-01 f-delta = 3.5e-03
+ Iter 19: f = 7.662248e-01 f-delta = 6.1e-03
+ Iter 20: f = 7.766593e-01 f-delta = 1.0e-02
+ Iter 21: f = 7.935161e-01 f-delta = 1.7e-02
+ Iter 22: f = 8.179368e-01 f-delta = 2.4e-02
+ Iter 23: f = 8.474634e-01 f-delta = 3.0e-02
+ Iter 24: f = 8.755422e-01 f-delta = 2.8e-02
+ Iter 25: f = 8.972542e-01 f-delta = 2.2e-02
+ Iter 26: f = 9.124308e-01 f-delta = 1.5e-02
+ Iter 27: f = 9.227931e-01 f-delta = 1.0e-02
+ Iter 28: f = 9.299410e-01 f-delta = 7.1e-03
+ Iter 29: f = 9.349698e-01 f-delta = 5.0e-03
+ Iter 30: f = 9.385891e-01 f-delta = 3.6e-03
+ Iter 31: f = 9.412765e-01 f-delta = 2.7e-03
+ Iter 32: f = 9.433563e-01 f-delta = 2.1e-03
+ Iter 33: f = 9.450409e-01 f-delta = 1.7e-03
+ Iter 34: f = 9.464623e-01 f-delta = 1.4e-03
+ Iter 35: f = 9.477005e-01 f-delta = 1.2e-03
+ Iter 36: f = 9.488007e-01 f-delta = 1.1e-03
+ Iter 37: f = 9.497904e-01 f-delta = 9.9e-04
+ Iter 38: f = 9.506871e-01 f-delta = 9.0e-04
+ Iter 39: f = 9.515021e-01 f-delta = 8.1e-04
+ Iter 40: f = 9.522435e-01 f-delta = 7.4e-04
+ Iter 41: f = 9.529178e-01 f-delta = 6.7e-04
+ Iter 42: f = 9.535309e-01 f-delta = 6.1e-04
+ Iter 43: f = 9.540877e-01 f-delta = 5.6e-04
+ Iter 44: f = 9.545928e-01 f-delta = 5.1e-04
+ Iter 45: f = 9.550505e-01 f-delta = 4.6e-04
+ Iter 46: f = 9.554617e-01 f-delta = 4.1e-04
+ Iter 47: f = 9.558355e-01 f-delta = 3.7e-04
+ Iter 48: f = 9.561738e-01 f-delta = 3.4e-04
+ Iter 49: f = 9.564789e-01 f-delta = 3.1e-04
+ Iter 50: f = 9.567538e-01 f-delta = 2.7e-04
+ Final f = 9.567538e-01 
+Run 5
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_unaligned of size [199 61 5], sparse with 1000 (1.6%) nonzeros
+ infinite modes = [true true false]
+ R = 3, maxiters = 50, tol = 1.000000e-04
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 50, 50, 50
+   tol  (inner) = 0.0001, 0.0001, 0.0001
+ Iter  1: f = 5.313743e-01 f-delta = 5.3e-01
+ Iter  2: f = 8.127382e-01 f-delta = 2.8e-01
+ Iter  3: f = 9.056028e-01 f-delta = 9.3e-02
+ Iter  4: f = 9.220900e-01 f-delta = 1.6e-02
+ Iter  5: f = 9.330975e-01 f-delta = 1.1e-02
+ Iter  6: f = 9.408374e-01 f-delta = 7.7e-03
+ Iter  7: f = 9.458864e-01 f-delta = 5.0e-03
+ Iter  8: f = 9.489399e-01 f-delta = 3.1e-03
+ Iter  9: f = 9.507900e-01 f-delta = 1.9e-03
+ Iter 10: f = 9.519964e-01 f-delta = 1.2e-03
+ Iter 11: f = 9.528803e-01 f-delta = 8.8e-04
+ Iter 12: f = 9.535862e-01 f-delta = 7.1e-04
+ Iter 13: f = 9.541810e-01 f-delta = 5.9e-04
+ Iter 14: f = 9.546972e-01 f-delta = 5.2e-04
+ Iter 15: f = 9.551521e-01 f-delta = 4.5e-04
+ Iter 16: f = 9.555562e-01 f-delta = 4.0e-04
+ Iter 17: f = 9.559167e-01 f-delta = 3.6e-04
+ Iter 18: f = 9.562391e-01 f-delta = 3.2e-04
+ Iter 19: f = 9.565277e-01 f-delta = 2.9e-04
+ Iter 20: f = 9.567862e-01 f-delta = 2.6e-04
+ Iter 21: f = 9.570179e-01 f-delta = 2.3e-04
+ Iter 22: f = 9.572256e-01 f-delta = 2.1e-04
+ Iter 23: f = 9.574119e-01 f-delta = 1.9e-04
+ Iter 24: f = 9.575790e-01 f-delta = 1.7e-04
+ Iter 25: f = 9.577290e-01 f-delta = 1.5e-04
+ Iter 26: f = 9.578637e-01 f-delta = 1.3e-04
+ Iter 27: f = 9.579847e-01 f-delta = 1.2e-04
+ Iter 28: f = 9.580935e-01 f-delta = 1.1e-04
+ Iter 29: f = 9.581914e-01 f-delta = 9.8e-05
+ Final f = 9.581914e-01 
+--- CP-HIFI with 500 samples ---
+
+Run 1
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_unaligned of size [185 61 5], sparse with 500 (0.89%) nonzeros
+ infinite modes = [true true false]
+ R = 3, maxiters = 50, tol = 1.000000e-04
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 50, 50, 50
+   tol  (inner) = 0.0001, 0.0001, 0.0001
+ Iter  1: f = 6.175782e-01 f-delta = 6.2e-01
+ Iter  2: f = 8.296059e-01 f-delta = 2.1e-01
+ Iter  3: f = 9.436727e-01 f-delta = 1.1e-01
+ Iter  4: f = 9.512916e-01 f-delta = 7.6e-03
+ Iter  5: f = 9.529186e-01 f-delta = 1.6e-03
+ Iter  6: f = 9.536113e-01 f-delta = 6.9e-04
+ Iter  7: f = 9.540344e-01 f-delta = 4.2e-04
+ Iter  8: f = 9.543464e-01 f-delta = 3.1e-04
+ Iter  9: f = 9.545971e-01 f-delta = 2.5e-04
+ Iter 10: f = 9.548065e-01 f-delta = 2.1e-04
+ Iter 11: f = 9.549844e-01 f-delta = 1.8e-04
+ Iter 12: f = 9.551366e-01 f-delta = 1.5e-04
+ Iter 13: f = 9.552671e-01 f-delta = 1.3e-04
+ Iter 14: f = 9.553792e-01 f-delta = 1.1e-04
+ Iter 15: f = 9.554755e-01 f-delta = 9.6e-05
+ Final f = 9.554755e-01 
+Run 2
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_unaligned of size [185 61 5], sparse with 500 (0.89%) nonzeros
+ infinite modes = [true true false]
+ R = 3, maxiters = 50, tol = 1.000000e-04
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 50, 50, 50
+   tol  (inner) = 0.0001, 0.0001, 0.0001
+ Iter  1: f = 5.842988e-01 f-delta = 5.8e-01
+ Iter  2: f = 7.256385e-01 f-delta = 1.4e-01
+ Iter  3: f = 7.816677e-01 f-delta = 5.6e-02
+ Iter  4: f = 7.930568e-01 f-delta = 1.1e-02
+ Iter  5: f = 8.018992e-01 f-delta = 8.8e-03
+ Iter  6: f = 8.125649e-01 f-delta = 1.1e-02
+ Iter  7: f = 8.264099e-01 f-delta = 1.4e-02
+ Iter  8: f = 8.438715e-01 f-delta = 1.7e-02
+ Iter  9: f = 8.640284e-01 f-delta = 2.0e-02
+ Iter 10: f = 8.840287e-01 f-delta = 2.0e-02
+ Iter 11: f = 9.004437e-01 f-delta = 1.6e-02
+ Iter 12: f = 9.119012e-01 f-delta = 1.1e-02
+ Iter 13: f = 9.193491e-01 f-delta = 7.4e-03
+ Iter 14: f = 9.243533e-01 f-delta = 5.0e-03
+ Iter 15: f = 9.280619e-01 f-delta = 3.7e-03
+ Iter 16: f = 9.310910e-01 f-delta = 3.0e-03
+ Iter 17: f = 9.337228e-01 f-delta = 2.6e-03
+ Iter 18: f = 9.360775e-01 f-delta = 2.4e-03
+ Iter 19: f = 9.382077e-01 f-delta = 2.1e-03
+ Iter 20: f = 9.401394e-01 f-delta = 1.9e-03
+ Iter 21: f = 9.418892e-01 f-delta = 1.7e-03
+ Iter 22: f = 9.434702e-01 f-delta = 1.6e-03
+ Iter 23: f = 9.448944e-01 f-delta = 1.4e-03
+ Iter 24: f = 9.461734e-01 f-delta = 1.3e-03
+ Iter 25: f = 9.473180e-01 f-delta = 1.1e-03
+ Iter 26: f = 9.483400e-01 f-delta = 1.0e-03
+ Iter 27: f = 9.492501e-01 f-delta = 9.1e-04
+ Iter 28: f = 9.500587e-01 f-delta = 8.1e-04
+ Iter 29: f = 9.507757e-01 f-delta = 7.2e-04
+ Iter 30: f = 9.514102e-01 f-delta = 6.3e-04
+ Iter 31: f = 9.519707e-01 f-delta = 5.6e-04
+ Iter 32: f = 9.524652e-01 f-delta = 4.9e-04
+ Iter 33: f = 9.529010e-01 f-delta = 4.4e-04
+ Iter 34: f = 9.532844e-01 f-delta = 3.8e-04
+ Iter 35: f = 9.536216e-01 f-delta = 3.4e-04
+ Iter 36: f = 9.539177e-01 f-delta = 3.0e-04
+ Iter 37: f = 9.541777e-01 f-delta = 2.6e-04
+ Iter 38: f = 9.544058e-01 f-delta = 2.3e-04
+ Iter 39: f = 9.546058e-01 f-delta = 2.0e-04
+ Iter 40: f = 9.547811e-01 f-delta = 1.8e-04
+ Iter 41: f = 9.549347e-01 f-delta = 1.5e-04
+ Iter 42: f = 9.550693e-01 f-delta = 1.3e-04
+ Iter 43: f = 9.551872e-01 f-delta = 1.2e-04
+ Iter 44: f = 9.552905e-01 f-delta = 1.0e-04
+ Iter 45: f = 9.553809e-01 f-delta = 9.0e-05
+ Final f = 9.553809e-01 
+Run 3
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_unaligned of size [185 61 5], sparse with 500 (0.89%) nonzeros
+ infinite modes = [true true false]
+ R = 3, maxiters = 50, tol = 1.000000e-04
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 50, 50, 50
+   tol  (inner) = 0.0001, 0.0001, 0.0001
+ Iter  1: f = 6.784150e-01 f-delta = 6.8e-01
+ Iter  2: f = 7.429321e-01 f-delta = 6.5e-02
+ Iter  3: f = 8.377241e-01 f-delta = 9.5e-02
+ Iter  4: f = 8.777471e-01 f-delta = 4.0e-02
+ Iter  5: f = 9.115497e-01 f-delta = 3.4e-02
+ Iter  6: f = 9.298048e-01 f-delta = 1.8e-02
+ Iter  7: f = 9.379905e-01 f-delta = 8.2e-03
+ Iter  8: f = 9.419989e-01 f-delta = 4.0e-03
+ Iter  9: f = 9.443308e-01 f-delta = 2.3e-03
+ Iter 10: f = 9.459118e-01 f-delta = 1.6e-03
+ Iter 11: f = 9.471134e-01 f-delta = 1.2e-03
+ Iter 12: f = 9.481008e-01 f-delta = 9.9e-04
+ Iter 13: f = 9.489519e-01 f-delta = 8.5e-04
+ Iter 14: f = 9.497045e-01 f-delta = 7.5e-04
+ Iter 15: f = 9.503780e-01 f-delta = 6.7e-04
+ Iter 16: f = 9.509833e-01 f-delta = 6.1e-04
+ Iter 17: f = 9.515277e-01 f-delta = 5.4e-04
+ Iter 18: f = 9.520171e-01 f-delta = 4.9e-04
+ Iter 19: f = 9.524563e-01 f-delta = 4.4e-04
+ Iter 20: f = 9.528496e-01 f-delta = 3.9e-04
+ Iter 21: f = 9.532013e-01 f-delta = 3.5e-04
+ Iter 22: f = 9.535154e-01 f-delta = 3.1e-04
+ Iter 23: f = 9.537955e-01 f-delta = 2.8e-04
+ Iter 24: f = 9.540452e-01 f-delta = 2.5e-04
+ Iter 25: f = 9.542674e-01 f-delta = 2.2e-04
+ Iter 26: f = 9.544650e-01 f-delta = 2.0e-04
+ Iter 27: f = 9.546407e-01 f-delta = 1.8e-04
+ Iter 28: f = 9.547968e-01 f-delta = 1.6e-04
+ Iter 29: f = 9.549354e-01 f-delta = 1.4e-04
+ Iter 30: f = 9.550584e-01 f-delta = 1.2e-04
+ Iter 31: f = 9.551676e-01 f-delta = 1.1e-04
+ Iter 32: f = 9.552645e-01 f-delta = 9.7e-05
+ Final f = 9.552645e-01 
+Run 4
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_unaligned of size [185 61 5], sparse with 500 (0.89%) nonzeros
+ infinite modes = [true true false]
+ R = 3, maxiters = 50, tol = 1.000000e-04
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 50, 50, 50
+   tol  (inner) = 0.0001, 0.0001, 0.0001
+ Iter  1: f = 5.562848e-01 f-delta = 5.6e-01
+ Iter  2: f = 7.179722e-01 f-delta = 1.6e-01
+ Iter  3: f = 7.960387e-01 f-delta = 7.8e-02
+ Iter  4: f = 8.389054e-01 f-delta = 4.3e-02
+ Iter  5: f = 8.688486e-01 f-delta = 3.0e-02
+ Iter  6: f = 8.908897e-01 f-delta = 2.2e-02
+ Iter  7: f = 9.068588e-01 f-delta = 1.6e-02
+ Iter  8: f = 9.170196e-01 f-delta = 1.0e-02
+ Iter  9: f = 9.230815e-01 f-delta = 6.1e-03
+ Iter 10: f = 9.270191e-01 f-delta = 3.9e-03
+ Iter 11: f = 9.300143e-01 f-delta = 3.0e-03
+ Iter 12: f = 9.325737e-01 f-delta = 2.6e-03
+ Iter 13: f = 9.348837e-01 f-delta = 2.3e-03
+ Iter 14: f = 9.370047e-01 f-delta = 2.1e-03
+ Iter 15: f = 9.389564e-01 f-delta = 2.0e-03
+ Iter 16: f = 9.407472e-01 f-delta = 1.8e-03
+ Iter 17: f = 9.423836e-01 f-delta = 1.6e-03
+ Iter 18: f = 9.438726e-01 f-delta = 1.5e-03
+ Iter 19: f = 9.452222e-01 f-delta = 1.3e-03
+ Iter 20: f = 9.464407e-01 f-delta = 1.2e-03
+ Iter 21: f = 9.475374e-01 f-delta = 1.1e-03
+ Iter 22: f = 9.485213e-01 f-delta = 9.8e-04
+ Iter 23: f = 9.494014e-01 f-delta = 8.8e-04
+ Iter 24: f = 9.501869e-01 f-delta = 7.9e-04
+ Iter 25: f = 9.508861e-01 f-delta = 7.0e-04
+ Iter 26: f = 9.515073e-01 f-delta = 6.2e-04
+ Iter 27: f = 9.520580e-01 f-delta = 5.5e-04
+ Iter 28: f = 9.525454e-01 f-delta = 4.9e-04
+ Iter 29: f = 9.529760e-01 f-delta = 4.3e-04
+ Iter 30: f = 9.533558e-01 f-delta = 3.8e-04
+ Iter 31: f = 9.536903e-01 f-delta = 3.3e-04
+ Iter 32: f = 9.539847e-01 f-delta = 2.9e-04
+ Iter 33: f = 9.542433e-01 f-delta = 2.6e-04
+ Iter 34: f = 9.544703e-01 f-delta = 2.3e-04
+ Iter 35: f = 9.546694e-01 f-delta = 2.0e-04
+ Iter 36: f = 9.548438e-01 f-delta = 1.7e-04
+ Iter 37: f = 9.549965e-01 f-delta = 1.5e-04
+ Iter 38: f = 9.551301e-01 f-delta = 1.3e-04
+ Iter 39: f = 9.552468e-01 f-delta = 1.2e-04
+ Iter 40: f = 9.553488e-01 f-delta = 1.0e-04
+ Iter 41: f = 9.554377e-01 f-delta = 8.9e-05
+ Final f = 9.554377e-01 
+Run 5
+CP_ALS_HIFI (Hybrid Finite/Infinite Dimensional):
+ tensor_unaligned of size [185 61 5], sparse with 500 (0.89%) nonzeros
+ infinite modes = [true true false]
+ R = 3, maxiters = 50, tol = 1.000000e-04
+ init = random,  nonneg = 0
+ solver (inner) = pcg, pcg, pcg
+ maxit  (inner) = 50, 50, 50
+   tol  (inner) = 0.0001, 0.0001, 0.0001
+ Iter  1: f = 6.068796e-01 f-delta = 6.1e-01
+ Iter  2: f = 6.995325e-01 f-delta = 9.3e-02
+ Iter  3: f = 7.743034e-01 f-delta = 7.5e-02
+ Iter  4: f = 7.813026e-01 f-delta = 7.0e-03
+ Iter  5: f = 7.868123e-01 f-delta = 5.5e-03
+ Iter  6: f = 7.921221e-01 f-delta = 5.3e-03
+ Iter  7: f = 7.979509e-01 f-delta = 5.8e-03
+ Iter  8: f = 8.048484e-01 f-delta = 6.9e-03
+ Iter  9: f = 8.134015e-01 f-delta = 8.6e-03
+ Iter 10: f = 8.243030e-01 f-delta = 1.1e-02
+ Iter 11: f = 8.383599e-01 f-delta = 1.4e-02
+ Iter 12: f = 8.563523e-01 f-delta = 1.8e-02
+ Iter 13: f = 8.782843e-01 f-delta = 2.2e-02
+ Iter 14: f = 9.015421e-01 f-delta = 2.3e-02
+ Iter 15: f = 9.207349e-01 f-delta = 1.9e-02
+ Iter 16: f = 9.327248e-01 f-delta = 1.2e-02
+ Iter 17: f = 9.390833e-01 f-delta = 6.4e-03
+ Iter 18: f = 9.424919e-01 f-delta = 3.4e-03
+ Iter 19: f = 9.445907e-01 f-delta = 2.1e-03
+ Iter 20: f = 9.461070e-01 f-delta = 1.5e-03
+ Iter 21: f = 9.473269e-01 f-delta = 1.2e-03
+ Iter 22: f = 9.483623e-01 f-delta = 1.0e-03
+ Iter 23: f = 9.492643e-01 f-delta = 9.0e-04
+ Iter 24: f = 9.500581e-01 f-delta = 7.9e-04
+ Iter 25: f = 9.507598e-01 f-delta = 7.0e-04
+ Iter 26: f = 9.513809e-01 f-delta = 6.2e-04
+ Iter 27: f = 9.519306e-01 f-delta = 5.5e-04
+ Iter 28: f = 9.524169e-01 f-delta = 4.9e-04
+ Iter 29: f = 9.528467e-01 f-delta = 4.3e-04
+ Iter 30: f = 9.532262e-01 f-delta = 3.8e-04
+ Iter 31: f = 9.535611e-01 f-delta = 3.3e-04
+ Iter 32: f = 9.538563e-01 f-delta = 3.0e-04
+ Iter 33: f = 9.541163e-01 f-delta = 2.6e-04
+ Iter 34: f = 9.543453e-01 f-delta = 2.3e-04
+ Iter 35: f = 9.545469e-01 f-delta = 2.0e-04
+ Iter 36: f = 9.547242e-01 f-delta = 1.8e-04
+ Iter 37: f = 9.548801e-01 f-delta = 1.6e-04
+ Iter 38: f = 9.550173e-01 f-delta = 1.4e-04
+ Iter 39: f = 9.551379e-01 f-delta = 1.2e-04
+ Iter 40: f = 9.552439e-01 f-delta = 1.1e-04
+ Iter 41: f = 9.553371e-01 f-delta = 9.3e-05
+ Final f = 9.553371e-01 
+--- CP-WOPT with 5000 samples ---
+
+Run 1
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.67e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 9.093860e-02, ||grad||_infty = 4.14e-02
+Iter  1000, f(x) = 7.439121e-02, ||grad||_infty = 2.77e-02
+Iter  1500, f(x) = 6.513127e-02, ||grad||_infty = 1.44e-02
+Iter  2000, f(x) = 6.224524e-02, ||grad||_infty = 6.16e-03
+Iter  2500, f(x) = 6.037550e-02, ||grad||_infty = 5.72e-03
+Iter  3000, f(x) = 5.887718e-02, ||grad||_infty = 2.56e-02
+Iter  3500, f(x) = 5.777624e-02, ||grad||_infty = 3.72e-03
+Iter  4000, f(x) = 5.684244e-02, ||grad||_infty = 3.74e-03
+Iter  4500, f(x) = 5.502768e-02, ||grad||_infty = 1.64e-02
+Iter  5000, f(x) = 5.447290e-02, ||grad||_infty = 5.24e-03
+Iter  5500, f(x) = 5.409549e-02, ||grad||_infty = 2.80e-03
+Iter  6000, f(x) = 5.402205e-02, ||grad||_infty = 2.50e-03
+Iter  6500, f(x) = 5.398867e-02, ||grad||_infty = 3.07e-03
+Iter  7000, f(x) = 5.395131e-02, ||grad||_infty = 1.76e-03
+Iter  7500, f(x) = 5.383578e-02, ||grad||_infty = 7.47e-04
+Iter  7503, f(x) = 5.383576e-02, ||grad||_infty = 2.57e-03
+Run 2
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.37e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   277, f(x) = 2.167437e-04, ||grad||_infty = 1.34e-04
+Run 3
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.03e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   355, f(x) = 2.166661e-04, ||grad||_infty = 1.17e-04
+Run 4
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.26e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   430, f(x) = 2.168463e-04, ||grad||_infty = 4.26e-05
+Run 5
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.06e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 7.921945e-02, ||grad||_infty = 2.71e-02
+Iter  1000, f(x) = 7.026436e-02, ||grad||_infty = 1.84e-02
+Iter  1500, f(x) = 6.342304e-02, ||grad||_infty = 3.94e-02
+Iter  2000, f(x) = 5.430639e-02, ||grad||_infty = 1.98e-02
+Iter  2500, f(x) = 4.745878e-02, ||grad||_infty = 2.80e-02
+Iter  3000, f(x) = 4.577364e-02, ||grad||_infty = 8.68e-03
+Iter  3500, f(x) = 4.505142e-02, ||grad||_infty = 1.05e-02
+Iter  4000, f(x) = 4.407256e-02, ||grad||_infty = 1.08e-02
+Iter  4500, f(x) = 4.347092e-02, ||grad||_infty = 1.62e-02
+Iter  5000, f(x) = 4.276194e-02, ||grad||_infty = 6.47e-03
+Iter  5500, f(x) = 4.205706e-02, ||grad||_infty = 4.45e-03
+Iter  6000, f(x) = 4.153468e-02, ||grad||_infty = 7.18e-03
+Iter  6500, f(x) = 3.977182e-02, ||grad||_infty = 1.96e-02
+Iter  7000, f(x) = 3.925917e-02, ||grad||_infty = 4.30e-03
+Iter  7500, f(x) = 3.856253e-02, ||grad||_infty = 2.43e-03
+Iter  8000, f(x) = 3.813275e-02, ||grad||_infty = 4.19e-03
+Iter  8500, f(x) = 3.780907e-02, ||grad||_infty = 2.45e-02
+Iter  9000, f(x) = 3.761232e-02, ||grad||_infty = 1.05e-03
+Iter  9233, f(x) = 3.758862e-02, ||grad||_infty = 3.35e-04
+--- CP-WOPT with 2500 samples ---
+
+Run 1
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.11e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 2.551195e-02, ||grad||_infty = 4.11e-03
+Iter  1000, f(x) = 1.830601e-02, ||grad||_infty = 2.80e-02
+Iter  1500, f(x) = 1.420113e-02, ||grad||_infty = 3.21e-03
+Iter  2000, f(x) = 1.369066e-02, ||grad||_infty = 1.07e-03
+Iter  2500, f(x) = 1.345470e-02, ||grad||_infty = 1.83e-03
+Iter  3000, f(x) = 1.309581e-02, ||grad||_infty = 1.95e-03
+Iter  3500, f(x) = 1.286542e-02, ||grad||_infty = 1.32e-03
+Iter  4000, f(x) = 1.275638e-02, ||grad||_infty = 7.58e-04
+Iter  4500, f(x) = 1.268041e-02, ||grad||_infty = 9.45e-04
+Iter  5000, f(x) = 1.263616e-02, ||grad||_infty = 4.97e-04
+Iter  5500, f(x) = 1.257792e-02, ||grad||_infty = 2.00e-03
+Iter  6000, f(x) = 1.244737e-02, ||grad||_infty = 1.22e-03
+Iter  6500, f(x) = 1.241356e-02, ||grad||_infty = 2.72e-03
+Iter  7000, f(x) = 1.238816e-02, ||grad||_infty = 9.92e-04
+Iter  7500, f(x) = 1.233076e-02, ||grad||_infty = 2.27e-03
+Iter  8000, f(x) = 1.226603e-02, ||grad||_infty = 2.18e-03
+Iter  8500, f(x) = 1.222993e-02, ||grad||_infty = 5.94e-04
+Iter  8711, f(x) = 1.222130e-02, ||grad||_infty = 1.28e-03
+Run 2
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 7.22e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 1.144756e-01, ||grad||_infty = 5.80e-03
+Iter  1000, f(x) = 1.108753e-01, ||grad||_infty = 2.93e-03
+Iter  1500, f(x) = 1.084617e-01, ||grad||_infty = 4.54e-03
+Iter  2000, f(x) = 1.075601e-01, ||grad||_infty = 1.80e-03
+Iter  2500, f(x) = 1.067643e-01, ||grad||_infty = 2.69e-03
+Iter  3000, f(x) = 1.063645e-01, ||grad||_infty = 1.86e-03
+Iter  3500, f(x) = 1.048573e-01, ||grad||_infty = 5.67e-03
+Iter  4000, f(x) = 1.043017e-01, ||grad||_infty = 1.91e-02
+Iter  4500, f(x) = 1.040355e-01, ||grad||_infty = 2.24e-03
+Iter  5000, f(x) = 1.038252e-01, ||grad||_infty = 1.75e-03
+Iter  5500, f(x) = 1.036517e-01, ||grad||_infty = 1.28e-03
+Iter  6000, f(x) = 1.034902e-01, ||grad||_infty = 3.77e-03
+Iter  6500, f(x) = 1.034072e-01, ||grad||_infty = 2.09e-03
+Iter  7000, f(x) = 1.033270e-01, ||grad||_infty = 8.71e-03
+Iter  7500, f(x) = 1.032644e-01, ||grad||_infty = 1.40e-03
+Iter  8000, f(x) = 1.032079e-01, ||grad||_infty = 1.41e-02
+Iter  8500, f(x) = 1.029865e-01, ||grad||_infty = 3.42e-03
+Iter  9000, f(x) = 1.029375e-01, ||grad||_infty = 2.96e-03
+Iter  9500, f(x) = 1.029014e-01, ||grad||_infty = 1.00e-03
+Iter 10000, f(x) = 1.028287e-01, ||grad||_infty = 7.64e-03
+Run 3
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.12e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 8.214647e-03, ||grad||_infty = 7.27e-04
+Iter  1000, f(x) = 8.095802e-03, ||grad||_infty = 4.02e-04
+Iter  1500, f(x) = 8.075927e-03, ||grad||_infty = 2.20e-04
+Iter  1956, f(x) = 8.068099e-03, ||grad||_infty = 3.91e-04
+Run 4
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 7.90e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 2.898288e-02, ||grad||_infty = 3.12e-03
+Iter  1000, f(x) = 2.790453e-02, ||grad||_infty = 5.50e-03
+Iter  1500, f(x) = 2.751989e-02, ||grad||_infty = 7.74e-04
+Iter  2000, f(x) = 2.737444e-02, ||grad||_infty = 3.44e-03
+Iter  2500, f(x) = 2.720429e-02, ||grad||_infty = 1.15e-02
+Iter  3000, f(x) = 2.709632e-02, ||grad||_infty = 1.00e-02
+Iter  3500, f(x) = 2.701234e-02, ||grad||_infty = 1.58e-03
+Iter  4000, f(x) = 2.697929e-02, ||grad||_infty = 1.54e-03
+Iter  4500, f(x) = 2.687134e-02, ||grad||_infty = 2.23e-03
+Iter  5000, f(x) = 2.682450e-02, ||grad||_infty = 3.22e-03
+Iter  5500, f(x) = 2.678888e-02, ||grad||_infty = 1.63e-03
+Iter  6000, f(x) = 2.675210e-02, ||grad||_infty = 3.19e-03
+Iter  6500, f(x) = 2.674098e-02, ||grad||_infty = 7.50e-04
+Iter  6529, f(x) = 2.674055e-02, ||grad||_infty = 4.20e-03
+Run 5
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 8.27e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 3.218681e-02, ||grad||_infty = 7.58e-04
+Iter  1000, f(x) = 3.165323e-02, ||grad||_infty = 2.70e-03
+Iter  1500, f(x) = 3.146338e-02, ||grad||_infty = 9.73e-04
+Iter  2000, f(x) = 3.121858e-02, ||grad||_infty = 2.24e-03
+Iter  2500, f(x) = 3.102847e-02, ||grad||_infty = 2.25e-03
+Iter  3000, f(x) = 3.089794e-02, ||grad||_infty = 1.60e-03
+Iter  3500, f(x) = 3.083607e-02, ||grad||_infty = 1.57e-03
+Iter  4000, f(x) = 3.079164e-02, ||grad||_infty = 5.41e-03
+Iter  4500, f(x) = 3.074718e-02, ||grad||_infty = 3.27e-03
+Iter  5000, f(x) = 3.066562e-02, ||grad||_infty = 2.27e-03
+Iter  5500, f(x) = 3.064296e-02, ||grad||_infty = 1.32e-03
+Iter  6000, f(x) = 3.060739e-02, ||grad||_infty = 1.37e-03
+Iter  6500, f(x) = 3.059288e-02, ||grad||_infty = 9.09e-04
+Iter  6755, f(x) = 3.058770e-02, ||grad||_infty = 3.99e-03
+--- CP-WOPT with 1000 samples ---
+
+Run 1
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 7.24e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 5.018195e-03, ||grad||_infty = 2.74e-03
+Iter  1000, f(x) = 4.227481e-03, ||grad||_infty = 1.07e-03
+Iter  1500, f(x) = 3.677414e-03, ||grad||_infty = 1.39e-03
+Iter  2000, f(x) = 3.291837e-03, ||grad||_infty = 2.07e-03
+Iter  2500, f(x) = 3.058009e-03, ||grad||_infty = 9.01e-04
+Iter  3000, f(x) = 2.853720e-03, ||grad||_infty = 4.02e-03
+Iter  3500, f(x) = 2.712435e-03, ||grad||_infty = 1.44e-03
+Iter  4000, f(x) = 2.632953e-03, ||grad||_infty = 8.17e-04
+Iter  4500, f(x) = 2.508854e-03, ||grad||_infty = 1.54e-03
+Iter  5000, f(x) = 2.448143e-03, ||grad||_infty = 1.87e-03
+Iter  5500, f(x) = 2.368001e-03, ||grad||_infty = 1.90e-03
+Iter  6000, f(x) = 2.342292e-03, ||grad||_infty = 2.25e-03
+Iter  6500, f(x) = 2.321968e-03, ||grad||_infty = 3.65e-03
+Iter  7000, f(x) = 2.275151e-03, ||grad||_infty = 9.12e-04
+Iter  7500, f(x) = 2.237203e-03, ||grad||_infty = 2.12e-03
+Iter  7950, f(x) = 2.221560e-03, ||grad||_infty = 1.75e-03
+Run 2
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.00e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 1.113468e-02, ||grad||_infty = 3.49e-03
+Iter  1000, f(x) = 8.349170e-03, ||grad||_infty = 6.17e-03
+Iter  1500, f(x) = 7.829811e-03, ||grad||_infty = 1.32e-03
+Iter  2000, f(x) = 7.583906e-03, ||grad||_infty = 2.74e-03
+Iter  2500, f(x) = 7.406464e-03, ||grad||_infty = 2.92e-03
+Iter  3000, f(x) = 7.254907e-03, ||grad||_infty = 1.39e-03
+Iter  3500, f(x) = 7.173356e-03, ||grad||_infty = 3.50e-03
+Iter  4000, f(x) = 7.030774e-03, ||grad||_infty = 3.64e-03
+Iter  4500, f(x) = 6.969409e-03, ||grad||_infty = 1.52e-02
+Iter  5000, f(x) = 6.814321e-03, ||grad||_infty = 2.34e-03
+Iter  5500, f(x) = 6.708844e-03, ||grad||_infty = 2.65e-03
+Iter  6000, f(x) = 6.640552e-03, ||grad||_infty = 1.48e-03
+Iter  6500, f(x) = 6.597504e-03, ||grad||_infty = 1.15e-03
+Iter  7000, f(x) = 6.538082e-03, ||grad||_infty = 1.98e-03
+Iter  7500, f(x) = 6.493602e-03, ||grad||_infty = 6.74e-03
+Iter  8000, f(x) = 6.458365e-03, ||grad||_infty = 4.96e-04
+Iter  8500, f(x) = 6.436873e-03, ||grad||_infty = 1.19e-03
+Iter  9000, f(x) = 6.345931e-03, ||grad||_infty = 5.08e-03
+Iter  9500, f(x) = 6.292185e-03, ||grad||_infty = 4.38e-03
+Iter 10000, f(x) = 6.269320e-03, ||grad||_infty = 2.29e-03
+Run 3
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.05e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 6.520988e-03, ||grad||_infty = 5.20e-03
+Iter  1000, f(x) = 4.887572e-03, ||grad||_infty = 1.40e-03
+Iter  1500, f(x) = 4.296761e-03, ||grad||_infty = 3.66e-03
+Iter  2000, f(x) = 3.792184e-03, ||grad||_infty = 3.54e-03
+Iter  2500, f(x) = 3.562577e-03, ||grad||_infty = 2.23e-03
+Iter  3000, f(x) = 3.386693e-03, ||grad||_infty = 5.75e-03
+Iter  3500, f(x) = 3.197710e-03, ||grad||_infty = 6.06e-03
+Iter  4000, f(x) = 3.120541e-03, ||grad||_infty = 8.23e-04
+Iter  4500, f(x) = 3.026301e-03, ||grad||_infty = 1.50e-03
+Iter  5000, f(x) = 2.988035e-03, ||grad||_infty = 1.82e-03
+Iter  5500, f(x) = 2.900235e-03, ||grad||_infty = 1.65e-03
+Iter  6000, f(x) = 2.856591e-03, ||grad||_infty = 1.19e-03
+Iter  6500, f(x) = 2.839596e-03, ||grad||_infty = 1.69e-03
+Iter  7000, f(x) = 2.818217e-03, ||grad||_infty = 1.14e-03
+Iter  7083, f(x) = 2.816049e-03, ||grad||_infty = 2.17e-03
+Run 4
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 7.65e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 4.312125e-03, ||grad||_infty = 1.74e-03
+Iter  1000, f(x) = 3.630025e-03, ||grad||_infty = 2.48e-03
+Iter  1500, f(x) = 3.341997e-03, ||grad||_infty = 1.50e-03
+Iter  2000, f(x) = 3.234596e-03, ||grad||_infty = 3.74e-03
+Iter  2500, f(x) = 3.174146e-03, ||grad||_infty = 5.34e-04
+Iter  3000, f(x) = 3.132113e-03, ||grad||_infty = 6.06e-04
+Iter  3500, f(x) = 3.036891e-03, ||grad||_infty = 1.50e-03
+Iter  4000, f(x) = 2.938262e-03, ||grad||_infty = 1.21e-03
+Iter  4500, f(x) = 2.873257e-03, ||grad||_infty = 1.02e-03
+Iter  5000, f(x) = 2.820267e-03, ||grad||_infty = 1.91e-03
+Iter  5500, f(x) = 2.777296e-03, ||grad||_infty = 1.87e-03
+Iter  6000, f(x) = 2.725430e-03, ||grad||_infty = 6.89e-04
+Iter  6500, f(x) = 2.687851e-03, ||grad||_infty = 2.02e-03
+Iter  7000, f(x) = 2.669518e-03, ||grad||_infty = 1.11e-03
+Iter  7500, f(x) = 2.590797e-03, ||grad||_infty = 1.92e-03
+Iter  7907, f(x) = 2.565119e-03, ||grad||_infty = 1.79e-04
+Run 5
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.27e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 6.686791e-03, ||grad||_infty = 1.68e-03
+Iter  1000, f(x) = 5.802742e-03, ||grad||_infty = 2.95e-03
+Iter  1500, f(x) = 5.458824e-03, ||grad||_infty = 1.13e-03
+Iter  2000, f(x) = 5.050126e-03, ||grad||_infty = 1.13e-03
+Iter  2500, f(x) = 4.810731e-03, ||grad||_infty = 6.14e-04
+Iter  3000, f(x) = 4.572447e-03, ||grad||_infty = 1.29e-03
+Iter  3500, f(x) = 4.253975e-03, ||grad||_infty = 1.80e-03
+Iter  4000, f(x) = 4.148570e-03, ||grad||_infty = 1.20e-03
+Iter  4500, f(x) = 4.096945e-03, ||grad||_infty = 1.49e-03
+Iter  5000, f(x) = 3.984737e-03, ||grad||_infty = 6.96e-04
+Iter  5500, f(x) = 3.959484e-03, ||grad||_infty = 8.21e-04
+Iter  6000, f(x) = 3.926304e-03, ||grad||_infty = 1.71e-03
+Iter  6500, f(x) = 3.903963e-03, ||grad||_infty = 5.20e-04
+Iter  7000, f(x) = 3.885760e-03, ||grad||_infty = 4.80e-04
+Iter  7500, f(x) = 3.873425e-03, ||grad||_infty = 4.50e-04
+Iter  7862, f(x) = 3.867965e-03, ||grad||_infty = 2.08e-03
+--- CP-WOPT with 500 samples ---
+
+Run 1
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 8.69e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 1.794180e-05, ||grad||_infty = 4.32e-04
+Iter   893, f(x) = 4.934009e-06, ||grad||_infty = 2.05e-04
+Run 2
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.05e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 1.488334e-05, ||grad||_infty = 6.16e-05
+Iter   663, f(x) = 1.137153e-05, ||grad||_infty = 2.24e-04
+Run 3
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 6.31e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 7.544072e-06, ||grad||_infty = 7.52e-05
+Iter   663, f(x) = 3.571134e-06, ||grad||_infty = 1.34e-04
+Run 4
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 7.92e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 7.355964e-06, ||grad||_infty = 3.97e-05
+Iter   686, f(x) = 2.868627e-06, ||grad||_infty = 9.63e-06
+Run 5
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.42e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 7.137271e-06, ||grad||_infty = 2.18e-05
+Iter   563, f(x) = 6.252020e-06, ||grad||_infty = 9.37e-06
+--- CP-WOPT with lower bound and 5000 samples ---
+
+Run 1
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 7.66e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter    53, f(x) = 2.222583e-04, ||grad||_infty = 2.87e-04
+Run 2
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 9.68e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter    73, f(x) = 2.222622e-04, ||grad||_infty = 2.88e-04
+Run 3
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 7.26e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter    58, f(x) = 2.222516e-04, ||grad||_infty = 2.56e-04
+Run 4
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.09e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter    91, f(x) = 2.222830e-04, ||grad||_infty = 4.42e-04
+Run 5
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 7.91e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter    73, f(x) = 2.222557e-04, ||grad||_infty = 2.58e-04
+--- CP-WOPT with lower bound and 2500 samples ---
+
+Run 1
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 9.72e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 1.860106e-04, ||grad||_infty = 4.71e-04
+Iter   660, f(x) = 1.682135e-04, ||grad||_infty = 3.98e-04
+Run 2
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.19e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   104, f(x) = 1.672685e-04, ||grad||_infty = 3.05e-04
+Run 3
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 9.47e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   123, f(x) = 1.672822e-04, ||grad||_infty = 2.97e-04
+Run 4
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.29e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   128, f(x) = 1.672235e-04, ||grad||_infty = 2.53e-04
+Run 5
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 1.20e-03 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   167, f(x) = 1.672891e-04, ||grad||_infty = 2.11e-04
+--- CP-WOPT with lower bound and 1000 samples ---
+
+Run 1
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 5.79e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 1.214541e-03, ||grad||_infty = 2.69e-03
+Iter  1000, f(x) = 6.736057e-04, ||grad||_infty = 1.92e-03
+Iter  1500, f(x) = 4.884728e-04, ||grad||_infty = 4.17e-03
+Iter  2000, f(x) = 4.356434e-04, ||grad||_infty = 4.47e-03
+Iter  2500, f(x) = 4.154158e-04, ||grad||_infty = 5.21e-03
+Iter  2672, f(x) = 4.107767e-04, ||grad||_infty = 5.50e-03
+Run 2
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 7.10e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 4.406623e-03, ||grad||_infty = 8.83e-03
+Iter  1000, f(x) = 3.786980e-03, ||grad||_infty = 1.61e-02
+Iter  1500, f(x) = 3.583750e-03, ||grad||_infty = 1.82e-02
+Iter  2000, f(x) = 3.414535e-03, ||grad||_infty = 2.08e-02
+Iter  2500, f(x) = 3.362251e-03, ||grad||_infty = 2.26e-02
+Iter  3000, f(x) = 3.317913e-03, ||grad||_infty = 2.78e-02
+Iter  3500, f(x) = 3.124054e-03, ||grad||_infty = 3.21e-02
+Iter  4000, f(x) = 2.981022e-03, ||grad||_infty = 3.61e-02
+Iter  4500, f(x) = 2.923457e-03, ||grad||_infty = 3.23e-02
+Iter  5000, f(x) = 2.836497e-03, ||grad||_infty = 2.37e-02
+Iter  5500, f(x) = 2.771683e-03, ||grad||_infty = 2.31e-02
+Iter  6000, f(x) = 2.754992e-03, ||grad||_infty = 2.42e-02
+Iter  6500, f(x) = 2.740323e-03, ||grad||_infty = 2.50e-02
+Iter  7000, f(x) = 2.730723e-03, ||grad||_infty = 2.36e-02
+Iter  7500, f(x) = 2.723407e-03, ||grad||_infty = 2.36e-02
+Iter  8000, f(x) = 2.714571e-03, ||grad||_infty = 2.33e-02
+Iter  8294, f(x) = 2.710545e-03, ||grad||_infty = 2.31e-02
+Run 3
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 8.78e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Positive dir derivative in projection 
+Using the backtracking step
+Iter   500, f(x) = 2.706843e-03, ||grad||_infty = 1.43e-02
+Iter  1000, f(x) = 2.433659e-03, ||grad||_infty = 3.93e-02
+Iter  1500, f(x) = 1.977098e-03, ||grad||_infty = 4.61e-02
+Iter  2000, f(x) = 1.830141e-03, ||grad||_infty = 4.55e-02
+Iter  2500, f(x) = 1.792520e-03, ||grad||_infty = 4.43e-02
+Iter  3000, f(x) = 1.757795e-03, ||grad||_infty = 4.23e-02
+Iter  3500, f(x) = 1.717419e-03, ||grad||_infty = 4.05e-02
+Iter  3628, f(x) = 1.714360e-03, ||grad||_infty = 4.03e-02
+Run 4
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 8.36e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 9.798614e-03, ||grad||_infty = 3.61e-02
+Iter  1000, f(x) = 9.127149e-03, ||grad||_infty = 5.04e-02
+Iter  1500, f(x) = 8.922718e-03, ||grad||_infty = 5.22e-02
+Iter  2000, f(x) = 8.711787e-03, ||grad||_infty = 5.80e-02
+Iter  2500, f(x) = 8.617865e-03, ||grad||_infty = 6.83e-02
+Iter  3000, f(x) = 8.347359e-03, ||grad||_infty = 9.13e-02
+Iter  3500, f(x) = 7.350211e-03, ||grad||_infty = 1.20e-01
+Iter  4000, f(x) = 4.892371e-03, ||grad||_infty = 1.15e-01
+Iter  4500, f(x) = 4.569857e-03, ||grad||_infty = 1.15e-01
+Iter  5000, f(x) = 4.483764e-03, ||grad||_infty = 1.15e-01
+Iter  5500, f(x) = 4.444784e-03, ||grad||_infty = 1.08e-01
+Iter  6000, f(x) = 4.409652e-03, ||grad||_infty = 1.02e-01
+Iter  6500, f(x) = 4.366475e-03, ||grad||_infty = 1.03e-01
+Iter  7000, f(x) = 4.349426e-03, ||grad||_infty = 1.03e-01
+Iter  7500, f(x) = 4.323446e-03, ||grad||_infty = 1.05e-01
+Iter  8000, f(x) = 4.295449e-03, ||grad||_infty = 1.05e-01
+Iter  8500, f(x) = 4.177450e-03, ||grad||_infty = 1.11e-01
+Iter  9000, f(x) = 4.112804e-03, ||grad||_infty = 1.10e-01
+Iter  9500, f(x) = 4.080467e-03, ||grad||_infty = 1.06e-01
+Iter 10000, f(x) = 4.036662e-03, ||grad||_infty = 1.05e-01
+Run 5
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 8.05e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 3.663302e-03, ||grad||_infty = 2.36e-02
+Iter  1000, f(x) = 2.840872e-03, ||grad||_infty = 1.93e-02
+Iter  1500, f(x) = 2.585287e-03, ||grad||_infty = 2.11e-02
+Iter  2000, f(x) = 2.437465e-03, ||grad||_infty = 1.80e-02
+Iter  2500, f(x) = 2.382179e-03, ||grad||_infty = 1.74e-02
+Iter  3000, f(x) = 2.337952e-03, ||grad||_infty = 1.66e-02
+Iter  3500, f(x) = 2.316172e-03, ||grad||_infty = 1.61e-02
+Iter  3629, f(x) = 2.314581e-03, ||grad||_infty = 1.62e-02
+--- CP-WOPT with lower bound and 500 samples ---
+
+Run 1
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 4.68e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 8.952073e-06, ||grad||_infty = 3.78e-04
+Iter   568, f(x) = 8.360805e-06, ||grad||_infty = 3.70e-04
+Run 2
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 7.35e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 5.781125e-06, ||grad||_infty = 8.85e-04
+Iter   638, f(x) = 3.757862e-06, ||grad||_infty = 7.11e-04
+Run 3
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 8.86e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 4.329910e-05, ||grad||_infty = 1.21e-03
+Iter   977, f(x) = 2.092485e-05, ||grad||_infty = 3.20e-04
+Run 4
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 7.21e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 8.631845e-05, ||grad||_infty = 1.55e-03
+Iter  1000, f(x) = 4.730285e-05, ||grad||_infty = 1.01e-03
+Iter  1413, f(x) = 3.057599e-05, ||grad||_infty = 1.08e-03
+Run 5
+Running CP-WOPT...
+Time for zeroing out masked entries of data tensor is 9.24e-04 seconds.
+(If zeroing is done in preprocessing, set 'skip_zeroing' to true.)
+Iter   500, f(x) = 8.365297e-05, ||grad||_infty = 5.12e-03
+Iter  1000, f(x) = 2.902540e-05, ||grad||_infty = 4.21e-03
+Iter  1390, f(x) = 2.012935e-05, ||grad||_infty = 3.62e-03
